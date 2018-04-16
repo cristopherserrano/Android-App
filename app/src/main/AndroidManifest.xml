@@ -34,6 +34,10 @@
             android:name=".SettingsActivity"
             android:label="@string/title_settings"
             />
+        <activity
+            android:name=".MealDetailActivity"
+            android:label="@string/title_meal_detail"
+            />
     </application>
 
 </manifest>
