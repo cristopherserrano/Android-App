@@ -11,13 +11,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MealPlanActivity"
-            android:label="@string/title_meal_plan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:label="@string/title_meal_plan"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".GroceryListActivity"
             android:label="@string/title_grocery_list"
@@ -34,9 +29,27 @@
             android:name=".SettingsActivity"
             android:label="@string/title_settings"
             />
+
+        <activity android:name=".startpage"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
-            android:name=".MealDetailActivity"
-            android:label="@string/title_meal_plan"
+            android:name=".AboutYouActivity"
+            android:theme="@style/NoActionBar"
+            />
+        <activity
+            android:name=".AllergyActivity"
+            android:theme="@style/NoActionBar"
+            />
+        <activity
+            android:name=".DietActivity"
+            android:theme="@style/NoActionBar"
             />
     </application>
 
