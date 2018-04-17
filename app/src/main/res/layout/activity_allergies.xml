@@ -10,67 +10,60 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
-        android:text="Dairy"
+        android:id="@+id/dairy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/dairy"
-        android:onClick="openGPS" />
+        android:text="Dairy" />
 
     <Button
-        android:text="Egg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dairy"
-        android:layout_alignStart="@+id/dairy"
         android:id="@+id/Egg"
-        android:onClick="openShake" />
-
-    <Button
-        android:text="Fish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/soy"
-        android:layout_alignEnd="@+id/soy"
+        android:layout_alignStart="@+id/dairy"
+        android:layout_below="@+id/dairy"
+        android:text="Egg" />
+
+    <Button
         android:id="@+id/FIsh"
-        android:onClick="openSQLite" />
-
-    <Button
-        android:text="Gluten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/soy"
+        android:layout_below="@+id/soy"
+        android:text="Fish" />
+
+    <Button
         android:id="@+id/Gluten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/Egg"
         android:layout_centerHorizontal="true"
-        android:onClick="openAccelerometer" />
+        android:text="Gluten" />
 
     <Button
-        android:text="Nuts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/Nuts"
-        android:layout_below="@+id/Gluten"
-        android:layout_alignStart="@+id/Egg"
-        android:onClick="openCamera" />
-
-    <Button
-        android:text="Shellfish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Egg"
+        android:layout_below="@+id/Gluten"
+        android:text="Nuts" />
+
+    <Button
         android:id="@+id/Shellfish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/Nuts"
         android:layout_centerHorizontal="true"
-        android:onClick="openWebService" />
+        android:text="Shellfish" />
 
     <Button
-        android:text="Soy"
+        android:id="@+id/soy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/soy"
-        android:layout_below="@+id/Shellfish"
         android:layout_alignStart="@+id/Nuts"
-        android:onClick="openFirebase" />
+        android:layout_below="@+id/Shellfish"
+        android:text="Soy" />
 
     <Button
         android:id="@+id/next"

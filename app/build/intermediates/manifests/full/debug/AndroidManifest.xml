@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bitebuilder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.bitebuilder.MealPlanActivity"
+            android:label="@string/title_meal_plan" />
+        <activity
+            android:name="com.bitebuilder.GroceryListActivity"
+            android:label="@string/title_grocery_list" />
+        <activity
+            android:name="com.bitebuilder.FavoritesActivity"
+            android:label="@string/title_favorites" />
+        <activity
+            android:name="com.bitebuilder.MealCheckerActivity"
+            android:label="@string/title_checker" />
+        <activity
+            android:name="com.bitebuilder.SettingsActivity"
+            android:label="@string/title_settings" />
+        <activity
+            android:name="com.bitebuilder.startpage"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bitebuilder.AboutYouActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.bitebuilder.AllergyActivity"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.bitebuilder.DietActivity"
+            android:theme="@style/NoActionBar" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

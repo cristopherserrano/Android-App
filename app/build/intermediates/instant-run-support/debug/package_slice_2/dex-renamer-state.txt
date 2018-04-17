@@ -1,0 +1,4 @@
+#Mon Apr 16 22:20:53 EDT 2018
+base.0=/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex
