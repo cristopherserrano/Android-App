@@ -42,6 +42,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.bitebuilder.MealDetailActivity"
+            android:label="@string/title_meal_plan" />
+        <activity
             android:name="com.bitebuilder.AboutYouActivity"
             android:theme="@style/NoActionBar" />
         <activity

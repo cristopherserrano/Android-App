@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
 MERGED from [com.android.support:design:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ed574be36eb6934acfdf058276b3c473/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6b5719c8d77398ece029bab8ae5cc731/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/470b57d5ba04bc5034dcc0257ac8b2a3/AndroidManifest.xml:2:1-11:12
@@ -18,25 +18,25 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/cristopherser
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/65f97b44dd20813256bd53af91a0de73/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/d54b4d015937e9fcd457f43231c1510d/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/75ec3bef2c9589f7002fd3cbe509188a/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
+INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-56:12
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:1-58:12
 		INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:5:5-54:19
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:5:5-56:19
 MERGED from [com.android.support:design:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ed574be36eb6934acfdf058276b3c473/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ed574be36eb6934acfdf058276b3c473/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/6b5719c8d77398ece029bab8ae5cc731/AndroidManifest.xml:25:5-29:19
@@ -123,24 +123,30 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:38:17-77
 	android:name
 		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:38:27-74
+activity#com.bitebuilder.MealDetailActivity
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:41:9-42:54
+	android:label
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:42:13-52
+	android:name
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:41:19-53
 activity#com.bitebuilder.AboutYouActivity
-ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:42:9-45:15
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:44:9-47:15
 	android:theme
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:44:13-47
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:46:13-47
 	android:name
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:43:13-45
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:45:13-45
 activity#com.bitebuilder.AllergyActivity
-ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:46:9-49:15
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:48:9-51:15
 	android:theme
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:48:13-47
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:50:13-47
 	android:name
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:47:13-44
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:49:13-44
 activity#com.bitebuilder.DietActivity
-ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:50:9-53:15
+ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:52:9-55:15
 	android:theme
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:52:13-47
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:54:13-47
 	android:name
-		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:51:13-41
+		ADDED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml:53:13-41
 uses-sdk
 INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/src/main/AndroidManifest.xml
