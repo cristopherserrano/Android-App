@@ -1,6 +1,5 @@
 package com.bitebuilder;
 
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -10,7 +9,6 @@ public class MealDetailActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meal_detail);
 
         String name = getIntent().getStringExtra("name");
         int image = getIntent().getIntExtra("image", 0);
