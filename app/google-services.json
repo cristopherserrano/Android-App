@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "243453803988",
+    "firebase_url": "https://bite-builder.firebaseio.com",
+    "project_id": "bite-builder",
+    "storage_bucket": "bite-builder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243453803988:android:ad2d5cd18826b88f",
+        "android_client_info": {
+          "package_name": "com.bitebuilder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243453803988-djj5pma1rq4bomishcfekjal08kstjd7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bitebuilder",
+            "certificate_hash": "a2c13ef628b00c3c49e939076c6abc6a11d6bac1"
+          }
+        },
+        {
+          "client_id": "243453803988-acl4vbsv0oe5mqvhpi23fmkjeg4neqk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeY-l15A6Li1x_8vRNJARVm1UMsRCO4Q8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243453803988-acl4vbsv0oe5mqvhpi23fmkjeg4neqk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

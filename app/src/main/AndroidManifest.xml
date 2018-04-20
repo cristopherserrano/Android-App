@@ -12,7 +12,9 @@
         <activity
             android:name=".MealPlanActivity"
             android:label="@string/title_meal_plan"/>
-
+        <activity
+            android:name=".AddMealActivity"
+            android:label="@string/title_add_meals" />
         <activity
             android:name=".GroceryListActivity"
             android:label="@string/title_grocery_list"

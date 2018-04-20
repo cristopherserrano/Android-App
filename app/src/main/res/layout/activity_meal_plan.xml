@@ -25,12 +25,10 @@
         android:id="@+id/addMeals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity=""
         android:src="@drawable/ic_add"
         android:layout_margin="16dp"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
-        android:onClick="addMeals" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigation" />
 
 
     <android.support.design.widget.BottomNavigationView

@@ -45,7 +45,15 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
 
         FoodItem item = data.get(position);
         holder.imageName.setText(item.getName());
-        holder.image.setImageResource(item.getImage());
+        if(item.getImage() != 0) {
+            holder.image.setImageResource(item.getImage());
+        }
+        else {
+            Glide.with(this)
+                    .using(new FirebaseImageLoader())
+                    .load(storageReference)
+                    .into(holder.image);
+        }
         return row;
     }
 

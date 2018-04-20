@@ -2,6 +2,7 @@ package com.bitebuilder;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -14,7 +15,7 @@ public class MealPlanActivity extends BaseActivity {
 
     private GridView gridView;
     private GridViewAdapter gridViewAdapter;
-    private ArrayList<FoodItem> meals = getFoodItems();
+    public static ArrayList<FoodItem> meals = getFoodItems();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,15 @@ public class MealPlanActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        FloatingActionButton addMealsButtton = (FloatingActionButton) findViewById(R.id.addMeals);
+        addMealsButtton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent addIntent = new Intent(MealPlanActivity.this, AddMealActivity.class);
+                startActivity(addIntent);
+            }
+        });
     }
 
     @Override
@@ -47,11 +57,7 @@ public class MealPlanActivity extends BaseActivity {
         return R.id.navigation_meal_plan;
     }
 
-    public void addMeals(View view) {
-
-    }
-
-    private ArrayList<FoodItem> getFoodItems() {
+    private static ArrayList<FoodItem> getFoodItems() {
         ArrayList<FoodItem> meals = new ArrayList<>();
         FoodItem meal1 = new FoodItem(R.drawable.paleo_curry_salmon_trifecta, "Curry Salmon Trifecta");
         FoodItem meal2 = new FoodItem(R.drawable.beef_with_broccoli, "Beef with Broccoli");
