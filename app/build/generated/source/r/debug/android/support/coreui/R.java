@@ -8,15 +8,24 @@ package android.support.coreui;
 
 public final class R {
     public static final class attr {
-        public static final int font = 0x7f030095;
-        public static final int fontProviderAuthority = 0x7f030097;
-        public static final int fontProviderCerts = 0x7f030098;
-        public static final int fontProviderFetchStrategy = 0x7f030099;
-        public static final int fontProviderFetchTimeout = 0x7f03009a;
-        public static final int fontProviderPackage = 0x7f03009b;
-        public static final int fontProviderQuery = 0x7f03009c;
-        public static final int fontStyle = 0x7f03009d;
-        public static final int fontWeight = 0x7f03009e;
+        public static final int coordinatorLayoutStyle = 0x7f03006e;
+        public static final int font = 0x7f030096;
+        public static final int fontProviderAuthority = 0x7f030098;
+        public static final int fontProviderCerts = 0x7f030099;
+        public static final int fontProviderFetchStrategy = 0x7f03009a;
+        public static final int fontProviderFetchTimeout = 0x7f03009b;
+        public static final int fontProviderPackage = 0x7f03009c;
+        public static final int fontProviderQuery = 0x7f03009d;
+        public static final int fontStyle = 0x7f03009e;
+        public static final int fontWeight = 0x7f03009f;
+        public static final int keylines = 0x7f0300b9;
+        public static final int layout_anchor = 0x7f0300bc;
+        public static final int layout_anchorGravity = 0x7f0300bd;
+        public static final int layout_behavior = 0x7f0300be;
+        public static final int layout_dodgeInsetEdges = 0x7f0300ea;
+        public static final int layout_insetEdge = 0x7f0300f3;
+        public static final int layout_keyline = 0x7f0300f4;
+        public static final int statusBarBackground = 0x7f030141;
     }
     public static final class bool {
         public static final int abc_action_bar_embed_tabs = 0x7f040000;
@@ -71,24 +80,32 @@ public final class R {
         public static final int actions = 0x7f08001e;
         public static final int async = 0x7f080027;
         public static final int blocking = 0x7f08002b;
+        public static final int bottom = 0x7f08002c;
         public static final int chronometer = 0x7f080035;
+        public static final int end = 0x7f080054;
         public static final int forever = 0x7f080061;
         public static final int icon = 0x7f080066;
         public static final int icon_group = 0x7f080067;
         public static final int info = 0x7f08006b;
         public static final int italic = 0x7f08006d;
+        public static final int left = 0x7f080070;
         public static final int line1 = 0x7f080071;
         public static final int line3 = 0x7f080072;
+        public static final int none = 0x7f08008b;
         public static final int normal = 0x7f08008c;
         public static final int notification_background = 0x7f08008d;
         public static final int notification_main_column = 0x7f08008e;
         public static final int notification_main_column_container = 0x7f08008f;
+        public static final int right = 0x7f08009e;
         public static final int right_icon = 0x7f08009f;
         public static final int right_side = 0x7f0800a0;
-        public static final int text = 0x7f0800cc;
-        public static final int text2 = 0x7f0800cd;
-        public static final int time = 0x7f0800d3;
-        public static final int title = 0x7f0800d4;
+        public static final int start = 0x7f0800c7;
+        public static final int tag_transition_group = 0x7f0800cc;
+        public static final int text = 0x7f0800cd;
+        public static final int text2 = 0x7f0800ce;
+        public static final int time = 0x7f0800d4;
+        public static final int title = 0x7f0800d5;
+        public static final int top = 0x7f0800d8;
     }
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f09000a;
@@ -112,18 +129,33 @@ public final class R {
         public static final int TextAppearance_Compat_Notification_Title = 0x7f0e0109;
         public static final int Widget_Compat_NotificationActionContainer = 0x7f0e017f;
         public static final int Widget_Compat_NotificationActionText = 0x7f0e0180;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f0e018c;
     }
     public static final class styleable {
-        public static final int[] FontFamily = { 0x7f030097, 0x7f030098, 0x7f030099, 0x7f03009a, 0x7f03009b, 0x7f03009c };
+        public static final int[] CoordinatorLayout = { 0x7f0300b9, 0x7f030141 };
+        public static final int CoordinatorLayout_keylines = 0;
+        public static final int CoordinatorLayout_statusBarBackground = 1;
+        public static final int[] CoordinatorLayout_Layout = { 0x010100b3, 0x7f0300bc, 0x7f0300bd, 0x7f0300be, 0x7f0300ea, 0x7f0300f3, 0x7f0300f4 };
+        public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
+        public static final int CoordinatorLayout_Layout_layout_anchor = 1;
+        public static final int CoordinatorLayout_Layout_layout_anchorGravity = 2;
+        public static final int CoordinatorLayout_Layout_layout_behavior = 3;
+        public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 4;
+        public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
+        public static final int CoordinatorLayout_Layout_layout_keyline = 6;
+        public static final int[] FontFamily = { 0x7f030098, 0x7f030099, 0x7f03009a, 0x7f03009b, 0x7f03009c, 0x7f03009d };
         public static final int FontFamily_fontProviderAuthority = 0;
         public static final int FontFamily_fontProviderCerts = 1;
         public static final int FontFamily_fontProviderFetchStrategy = 2;
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x7f030095, 0x7f03009d, 0x7f03009e };
-        public static final int FontFamilyFont_font = 0;
-        public static final int FontFamilyFont_fontStyle = 1;
-        public static final int FontFamilyFont_fontWeight = 2;
+        public static final int[] FontFamilyFont = { 0x01010532, 0x01010533, 0x0101053f, 0x7f030096, 0x7f03009e, 0x7f03009f };
+        public static final int FontFamilyFont_android_font = 0;
+        public static final int FontFamilyFont_android_fontWeight = 1;
+        public static final int FontFamilyFont_android_fontStyle = 2;
+        public static final int FontFamilyFont_font = 3;
+        public static final int FontFamilyFont_fontStyle = 4;
+        public static final int FontFamilyFont_fontWeight = 5;
     }
 }

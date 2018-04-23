@@ -8,15 +8,15 @@ package android.support.transition;
 
 public final class R {
     public static final class attr {
-        public static final int font = 0x7f030095;
-        public static final int fontProviderAuthority = 0x7f030097;
-        public static final int fontProviderCerts = 0x7f030098;
-        public static final int fontProviderFetchStrategy = 0x7f030099;
-        public static final int fontProviderFetchTimeout = 0x7f03009a;
-        public static final int fontProviderPackage = 0x7f03009b;
-        public static final int fontProviderQuery = 0x7f03009c;
-        public static final int fontStyle = 0x7f03009d;
-        public static final int fontWeight = 0x7f03009e;
+        public static final int font = 0x7f030096;
+        public static final int fontProviderAuthority = 0x7f030098;
+        public static final int fontProviderCerts = 0x7f030099;
+        public static final int fontProviderFetchStrategy = 0x7f03009a;
+        public static final int fontProviderFetchTimeout = 0x7f03009b;
+        public static final int fontProviderPackage = 0x7f03009c;
+        public static final int fontProviderQuery = 0x7f03009d;
+        public static final int fontStyle = 0x7f03009e;
+        public static final int fontWeight = 0x7f03009f;
     }
     public static final class bool {
         public static final int abc_action_bar_embed_tabs = 0x7f040000;
@@ -98,15 +98,15 @@ public final class R {
         public static final int save_non_transition_alpha = 0x7f0800a2;
         public static final int save_scale_type = 0x7f0800a3;
         public static final int status_bar_latest_event_content = 0x7f0800c8;
-        public static final int text = 0x7f0800cc;
-        public static final int text2 = 0x7f0800cd;
-        public static final int time = 0x7f0800d3;
-        public static final int title = 0x7f0800d4;
-        public static final int transition_current_scene = 0x7f0800da;
-        public static final int transition_layout_save = 0x7f0800db;
-        public static final int transition_position = 0x7f0800dc;
-        public static final int transition_scene_layoutid_cache = 0x7f0800dd;
-        public static final int transition_transform = 0x7f0800de;
+        public static final int text = 0x7f0800cd;
+        public static final int text2 = 0x7f0800ce;
+        public static final int time = 0x7f0800d4;
+        public static final int title = 0x7f0800d5;
+        public static final int transition_current_scene = 0x7f0800db;
+        public static final int transition_layout_save = 0x7f0800dc;
+        public static final int transition_position = 0x7f0800dd;
+        public static final int transition_scene_layoutid_cache = 0x7f0800de;
+        public static final int transition_transform = 0x7f0800df;
     }
     public static final class integer {
         public static final int cancel_button_image_alpha = 0x7f090004;
@@ -147,16 +147,19 @@ public final class R {
         public static final int Widget_Compat_NotificationActionText = 0x7f0e0180;
     }
     public static final class styleable {
-        public static final int[] FontFamily = { 0x7f030097, 0x7f030098, 0x7f030099, 0x7f03009a, 0x7f03009b, 0x7f03009c };
+        public static final int[] FontFamily = { 0x7f030098, 0x7f030099, 0x7f03009a, 0x7f03009b, 0x7f03009c, 0x7f03009d };
         public static final int FontFamily_fontProviderAuthority = 0;
         public static final int FontFamily_fontProviderCerts = 1;
         public static final int FontFamily_fontProviderFetchStrategy = 2;
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x7f030095, 0x7f03009d, 0x7f03009e };
-        public static final int FontFamilyFont_font = 0;
-        public static final int FontFamilyFont_fontStyle = 1;
-        public static final int FontFamilyFont_fontWeight = 2;
+        public static final int[] FontFamilyFont = { 0x01010532, 0x01010533, 0x0101053f, 0x7f030096, 0x7f03009e, 0x7f03009f };
+        public static final int FontFamilyFont_android_font = 0;
+        public static final int FontFamilyFont_android_fontWeight = 1;
+        public static final int FontFamilyFont_android_fontStyle = 2;
+        public static final int FontFamilyFont_font = 3;
+        public static final int FontFamilyFont_fontStyle = 4;
+        public static final int FontFamilyFont_fontWeight = 5;
     }
 }

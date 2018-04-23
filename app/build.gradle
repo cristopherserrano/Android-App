@@ -30,6 +30,9 @@ dependencies {
     compile 'com.google.firebase:firebase-database:15.0.0'
     compile 'com.firebase:firebase-client-android:2.5.0'
     compile 'com.google.firebase:firebase-storage:15.0.0'
+    compile 'com.github.bumptech.glide:glide:4.7.1'
+    compile 'com.firebaseui:firebase-ui-storage:0.6.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

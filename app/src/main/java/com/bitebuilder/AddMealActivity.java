@@ -74,10 +74,15 @@ public class AddMealActivity extends BaseActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Go through meals in firebase database and get images, names, and ingredients from all
                 for(int i = 0; i < dataSnapshot.getChildrenCount(); i++) {
-                    Log.d("Count children", String.valueOf(i)+1);
                     DataSnapshot mealSnapshot = dataSnapshot.child("meal" + String.valueOf(i+1));
                     String imageUrl = mealSnapshot.child("image").getValue().toString();
                     String name = mealSnapshot.child("name").getValue().toString();
+
+                    FirebaseStorage storage = FirebaseStorage.getInstance();
+                    StorageReference storageReference = storage.getReferenceFromUrl("gs://bite-builder.appspot.com/");
+                    StorageReference urlReference = storageReference.child(imageUrl);
+                    urlReference.
+
                     String[] ingredients = new String[10];
                     for(int j = 0; j < mealSnapshot.child("ingredients").getChildrenCount(); j++) {
                         ingredients[j] = mealSnapshot.child("ingredients/" + String.valueOf(j+1)).getValue().toString();
