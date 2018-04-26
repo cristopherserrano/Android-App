@@ -1,11 +1,21 @@
 package com.bitebuilder;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -36,15 +46,6 @@ public class MealPlanActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
-
-        FloatingActionButton addMealsButtton = (FloatingActionButton) findViewById(R.id.addMeals);
-        addMealsButtton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent addIntent = new Intent(MealPlanActivity.this, AddMealActivity.class);
-                startActivity(addIntent);
-            }
-        });
     }
 
     @Override
@@ -70,5 +71,38 @@ public class MealPlanActivity extends BaseActivity {
         meals.add(meal4);
 
         return meals;
+    }
+
+    public void addMeals(View v) {
+        DatabaseReference mealsReference = FirebaseDatabase.getInstance().getReference().child("meals");
+
+        mealsReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Go through meals in firebase database and get images, names, and ingredients from all
+                ArrayList<FoodItem> firebaseMeals = new ArrayList<>();
+
+                for(DataSnapshot mealSnapshot : dataSnapshot.getChildren()) {
+                    String imageUrl = mealSnapshot.child("image").getValue().toString();
+                    String name = mealSnapshot.child("name").getValue().toString();
+
+                    String[] ingredients = new String[20];
+                    for(int j = 0; j < mealSnapshot.child("ingredients").getChildrenCount(); j++) {
+                        ingredients[j] = mealSnapshot.child("ingredients/" + String.valueOf(j+1)).getValue().toString();
+                    }
+                    FoodItem meal = new FoodItem(name, imageUrl, ingredients);
+
+                    firebaseMeals.add(meal);
+                }
+                Intent addIntent = new Intent(MealPlanActivity.this, AddMealActivity.class);
+                Log.i("meal plan", "meal plan: " + firebaseMeals.get(0));
+                addIntent.putParcelableArrayListExtra("firebaseMeals", firebaseMeals);
+                startActivity(addIntent);
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.e("loadPost:onCancelled", databaseError.toException().toString());
+            }
+        });
     }
 }
