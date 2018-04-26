@@ -55,7 +55,6 @@ public class AddMealActivity extends BaseActivity {
 
         gridView = (GridView) findViewById(R.id.addMealGridView);
         gridViewAdapter = new GridViewAdapter(this, R.layout.grid_add_item_layout, meals);
-        gridViewAdapter.notifyDataSetChanged();
         gridView.setAdapter(gridViewAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -63,8 +62,7 @@ public class AddMealActivity extends BaseActivity {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 FoodItem item = (FoodItem) parent.getItemAtPosition(position);
                 Log.i("selected", "selected: " + String.valueOf(item.getSelected()));
-                item.toggleSelected();
-                updateMeals();
+                selectAndUpdateMeals(position);
                 // Add to SQLite database to appear on meal plan activity and highlight grid
             }
         });
@@ -110,8 +108,8 @@ public class AddMealActivity extends BaseActivity {
         return R.id.navigation_meal_plan;
     }
 
-    public void updateMeals() {
-        Log.i("selected", "selected: updateMeals");
+    public void selectAndUpdateMeals(int position) {
+        meals.get(position).toggleSelected();
         gridViewAdapter.notifyDataSetChanged();
     }
 }
