@@ -51,13 +51,6 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
             if(layoutResourceId == R.layout.grid_add_item_layout) {
                 holder.addImage = (ImageView) row.findViewById(R.id.addMealImage);
                 holder.layout = (RelativeLayout) row.findViewById(R.id.gridAddItemLayout);
-                if(item.getSelected()) {
-                    holder.layout.setBackgroundColor(Color.GREEN);
-                    Log.i("selected", "selected: *****************");
-                }
-                else {
-                    holder.layout.setBackgroundColor(ContextCompat.getColor(context, R.color.gray));
-                }
             }
             row.setTag(holder);
         }
@@ -70,6 +63,13 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
         }
         else {
             GlideApp.with(this.context).load(item.getImageReference()).into(holder.image);
+        }
+
+        if(layoutResourceId == R.layout.grid_add_item_layout && item.getSelected()) {
+            holder.layout.setBackgroundColor(Color.GREEN);
+        }
+        else if(layoutResourceId == R.layout.grid_add_item_layout) {
+            holder.layout.setBackgroundColor(ContextCompat.getColor(context, R.color.gray));
         }
         return row;
     }

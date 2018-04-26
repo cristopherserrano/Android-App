@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.1.1"
-    timestamp="1524721299591"
+    timestamp="1524722953739"
     token="-6589170344565558219"
-    verifier="CLASS_ADDED" >
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="1512" />
+        duration="1755" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="86" />
+        duration="43" />
     <task
         name="verifier"
-        duration="13" />
+        duration="3" />
 
     <artifact
         location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -100,8 +100,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524721299591"
-        verifier="CLASS_ADDED" >
+        timestamp="1524722953739"
+        verifier="METHOD_DELETED" >
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
