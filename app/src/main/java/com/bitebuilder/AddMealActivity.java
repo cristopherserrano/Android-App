@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -13,6 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -35,56 +38,34 @@ public class AddMealActivity extends BaseActivity {
 
     private GridView gridView;
     private GridViewAdapter gridViewAdapter;
+    private ArrayList<FoodItem> meals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        DatabaseReference database = FirebaseDatabase.getInstance().getReference();
-        DatabaseReference mealsReference = database.child("meals");
+        meals = getIntent().getParcelableArrayListExtra("firebaseMeals");
 
-        mealsReference.addListenerForSingleValueEvent(new ValueEventListener() {
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference gsReference = storage.getReferenceFromUrl("gs://bite-builder.appspot.com/");
+        for(FoodItem meal : meals) {
+            StorageReference imageReference = gsReference.child(meal.getImageUrl());
+            meal.setImageReference(imageReference);
+        }
+
+        gridView = (GridView) findViewById(R.id.addMealGridView);
+        gridViewAdapter = new GridViewAdapter(this, R.layout.grid_add_item_layout, meals);
+        gridViewAdapter.notifyDataSetChanged();
+        gridView.setAdapter(gridViewAdapter);
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // Go through meals in firebase database and get images, names, and ingredients from all
-                ArrayList<FoodItem> firebaseMeals = new ArrayList<>();
-                FirebaseStorage storage = FirebaseStorage.getInstance();
-                StorageReference gsReference = storage.getReferenceFromUrl("gs://bite-builder.appspot.com/");
-
-                for(DataSnapshot mealSnapshot : dataSnapshot.getChildren()) {
-                    String imageUrl = mealSnapshot.child("image").getValue().toString();
-                    String name = mealSnapshot.child("name").getValue().toString();
-
-                    String[] ingredients = new String[20];
-                    for(int j = 0; j < mealSnapshot.child("ingredients").getChildrenCount(); j++) {
-                        ingredients[j] = mealSnapshot.child("ingredients/" + String.valueOf(j+1)).getValue().toString();
-                        Log.i("meal information", "Meal info: " + mealSnapshot.child("ingredients/" + String.valueOf(j+1)).getValue().toString());
-                    }
-                    FoodItem meal = new FoodItem(name, imageUrl, ingredients);
-                    StorageReference imageReference = gsReference.child(meal.getImageUrl());
-                    meal.setImageReference(imageReference);
-
-                    Log.i("meal information", "Meal info: " + meal.getName());
-                    Log.i("meal information", "Meal info: " + meal.getImageUrl());
-                    Log.i("meal information", "Meal info: " + meal.getImageReference().toString());
-
-                    firebaseMeals.add(meal);
-                }
-
-                gridView = (GridView) findViewById(R.id.addMealGridView);
-                gridViewAdapter = new GridViewAdapter(AddMealActivity.this, R.layout.grid_add_item_layout, firebaseMeals);
-                gridView.setAdapter(gridViewAdapter);
-
-                gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                        FoodItem item = (FoodItem) parent.getItemAtPosition(position);
-                        // Add to SQLite database to appear on meal plan activity and highlight grid
-                    }
-                });
-            }
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.e("loadPost:onCancelled", databaseError.toException().toString());
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                FoodItem item = (FoodItem) parent.getItemAtPosition(position);
+                Log.i("selected", "selected: " + String.valueOf(item.getSelected()));
+                item.toggleSelected();
+                updateMeals();
+                // Add to SQLite database to appear on meal plan activity and highlight grid
             }
         });
 
@@ -129,4 +110,8 @@ public class AddMealActivity extends BaseActivity {
         return R.id.navigation_meal_plan;
     }
 
+    public void updateMeals() {
+        Log.i("selected", "selected: updateMeals");
+        gridViewAdapter.notifyDataSetChanged();
+    }
 }
