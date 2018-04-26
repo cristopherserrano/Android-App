@@ -12,8 +12,10 @@ public class FoodItem implements Parcelable {
     private StorageReference imageReference;
 
     public FoodItem(Parcel in) {
+        super();
         String[] ingredients = new String[20];
         in.readStringArray(ingredients);
+        this.ingredients = ingredients;
         this.name = in.readString();
         this.imageUrl = in.readString();
     }
@@ -29,6 +31,16 @@ public class FoodItem implements Parcelable {
         this.name = name;
         this.imageUrl = imageUrl;
         this.ingredients = ingredients;
+    }
+
+    public FoodItem(String name, String imageUrl, String ingredients) {
+        super();
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.ingredients = new String[20];
+        for(int i = 0; i < ingredients.split(",").length; i++) {
+            this.ingredients[i] = ingredients.split(",")[i];
+        }
     }
 
     public int getImage() {

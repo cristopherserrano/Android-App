@@ -2,6 +2,8 @@ package com.bitebuilder;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
@@ -25,11 +27,21 @@ public class MealPlanActivity extends BaseActivity {
 
     private GridView gridView;
     private GridViewAdapter gridViewAdapter;
-    public static ArrayList<FoodItem> meals = getFoodItems();
+    private ArrayList<FoodItem> meals = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        downloadFoodItems();
+
+        // Fill image references from firebase storage
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference gsReference = storage.getReferenceFromUrl("gs://bite-builder.appspot.com/");
+        for(FoodItem meal : meals) {
+            StorageReference imageReference = gsReference.child(meal.getImageUrl());
+            meal.setImageReference(imageReference);
+        }
 
         gridView = (GridView) findViewById(R.id.mealPlanGridView);
         gridViewAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, meals);
@@ -41,7 +53,8 @@ public class MealPlanActivity extends BaseActivity {
 
                 Intent intent = new Intent(MealPlanActivity.this, MealDetailActivity.class);
                 intent.putExtra("name", item.getName());
-                intent.putExtra("image", item.getImage());
+                intent.putExtra("ingredients", item.getIngredients());
+                intent.putExtra("imageUrl", item.getImageUrl());
 
                 startActivity(intent);
             }
@@ -58,19 +71,35 @@ public class MealPlanActivity extends BaseActivity {
         return R.id.navigation_meal_plan;
     }
 
-    private static ArrayList<FoodItem> getFoodItems() {
-        ArrayList<FoodItem> meals = new ArrayList<>();
-        FoodItem meal1 = new FoodItem(R.drawable.paleo_curry_salmon_trifecta, "Curry Salmon Trifecta");
-        FoodItem meal2 = new FoodItem(R.drawable.beef_with_broccoli, "Beef with Broccoli");
-        FoodItem meal3 = new FoodItem(R.drawable.tuscan_beef_stew, "Tuscan Beef Stew");
-        FoodItem meal4 = new FoodItem(R.drawable.shrimp_and_zucchini_ribbons, "Shrimp and Zucchini Ribbons");
+    public void downloadFoodItems() {
+        DatabaseHelper mDbHelper = new DatabaseHelper(this);
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        meals.add(meal1);
-        meals.add(meal2);
-        meals.add(meal3);
-        meals.add(meal4);
+        // Which columns from the database you will actually use after this query
+        String[] projection = {
+                "name",
+                "imageUrl",
+                "ingredients"
+        };
 
-        return meals;
+        Cursor cursor = db.query(
+                "meal",
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+
+        while(cursor.moveToNext()) {
+            String curName = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+            String curImageUrl = cursor.getString(cursor.getColumnIndexOrThrow("imageUrl"));
+            String curIngredients = cursor.getString(cursor.getColumnIndexOrThrow("ingredients"));
+
+            FoodItem meal = new FoodItem(curName, curImageUrl, curIngredients);
+            meals.add(meal);
+        }
     }
 
     public void addMeals(View v) {
@@ -91,11 +120,9 @@ public class MealPlanActivity extends BaseActivity {
                         ingredients[j] = mealSnapshot.child("ingredients/" + String.valueOf(j+1)).getValue().toString();
                     }
                     FoodItem meal = new FoodItem(name, imageUrl, ingredients);
-
                     firebaseMeals.add(meal);
                 }
                 Intent addIntent = new Intent(MealPlanActivity.this, AddMealActivity.class);
-                Log.i("meal plan", "meal plan: " + firebaseMeals.get(0));
                 addIntent.putParcelableArrayListExtra("firebaseMeals", firebaseMeals);
                 startActivity(addIntent);
             }
