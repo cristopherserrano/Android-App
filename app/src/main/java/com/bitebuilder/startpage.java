@@ -43,24 +43,15 @@ public class startpage extends AppCompatActivity {
 
         userName  = findViewById(R.id.userName);
         password1 = findViewById(R.id.editText3);
-
-    }
-
-    public void saveToSharedPreferences(View view) {
-
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-        SharedPreferences.Editor editor = settings.edit();
-        editor.putString("password", password1.getText().toString());
-
-        editor.putString("user", userName.getText().toString());
-        editor.commit();
-//        SharedPreferences mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-//        SharedPreferences.Editor mEditor = mPreferences.edit();
-//
-//        mEditor.putString(spnameEditText.getText().toString(), spcompIDEditText.getText().toString());
-//        mEditor.commit();
+        String editTextValue = settings.getString("password", "none");
+        String editTextValue2 = settings.getString("user", "none");
+        userName.setText(editTextValue2);
+        password1.setText(editTextValue);
 
     }
+
+
 
     public void NewUser(View view) {
         Intent intent = new Intent(this, DietActivity.class);
@@ -113,14 +104,10 @@ public class startpage extends AppCompatActivity {
 
     }
 
-//    public void loadFromSharedPreferences(View view) {
-//
-//        // Add your code here to load
-//        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
-//        String editTextValue = settings.getString("editTextValue", "none");
-//        String editTextValue2 = settings.getString("key1", "none");
-//        userName.setText(editTextValue2);
-//        password.setText(editTextValue);
-//    }
+    public void loadFromSharedPreferences(View view) {
+
+        // Add your code here to load
+
+    }
 
 }

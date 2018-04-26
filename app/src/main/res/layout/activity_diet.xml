@@ -7,14 +7,16 @@
         android:gravity="center_vertical"
         android:background="?android:attr/selectableItemBackground">
 
-    <CheckBox android:id="@+id/done_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
+        <CheckBox
+            android:id="@+id/done_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:onClick="classic_clicked"
+            android:scaleX="1.50"
+            android:scaleY="1.50" />
 
-    <TextView
+        <TextView
         android:id="@+id/entry_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/entry_due_date"
         android:gravity="center_vertical"
+        android:onClick="lowcarb_clicked"
         android:scaleX="1.50"
         android:scaleY="1.50" />
 
@@ -72,6 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/lowcarb_descrip"
         android:gravity="center_vertical"
+        android:onClick="paleo_clicked"
         android:scaleX="1.50"
         android:scaleY="1.50" />
 
@@ -103,6 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/paleo_descrip"
         android:gravity="center_vertical"
+        android:onClick="pescatarian_clicked"
         android:scaleX="1.50"
         android:scaleY="1.50" />
 
@@ -134,6 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/pescatarian_descrip"
         android:gravity="center_vertical"
+        android:onClick="vegetarian_clicked"
         android:scaleX="1.50"
         android:scaleY="1.50" />
 
@@ -165,6 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/vegetarian_descrip"
         android:gravity="center_vertical"
+        android:onClick="vegan_clicked"
         android:scaleX="1.50"
         android:scaleY="1.50" />
 
