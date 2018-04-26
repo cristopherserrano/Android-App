@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="23"
-        android:targetSdkVersion="26" />
+        android:targetSdkVersion="27" />
 
     <!-- Required permission for App measurement to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -35,7 +35,7 @@
             android:label="@string/title_meal_plan" />
         <activity
             android:name="com.bitebuilder.AddMealActivity"
-            android:label="@string/title_add_meals" />
+            android:theme="@style/NoActionBar" />
         <activity
             android:name="com.bitebuilder.GroceryListActivity"
             android:label="@string/title_grocery_list" />
@@ -69,10 +69,6 @@
         <activity
             android:name="com.bitebuilder.DietActivity"
             android:theme="@style/NoActionBar" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="26.1.0" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -130,9 +126,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        <meta-data
-            android:name="android.arch.lifecycle.VERSION"
-            android:value="27.0.0-SNAPSHOT" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

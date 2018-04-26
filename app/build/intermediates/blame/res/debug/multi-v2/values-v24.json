@@ -4,17 +4,17 @@
             "outputFile": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\a41de37462774c900c8cf81948f1d70d\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\adda3dcbe51de930add3385e951a810d\\res\\values-v24\\values-v24.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,212,347,416,480,549",
-                        "endColumns": "156,134,68,63,68,69",
-                        "endOffsets": "207,342,411,475,544,614"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 },
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\7601a38b8e2df28f81e4920083639f9d\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\b3466053c315dff6b10f9004e22e6357\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -23,11 +23,11 @@
                         "endOffsets": "116,177,243,310"
                     },
                     "to": {
-                        "startLines": "8,9,10,11",
+                        "startLines": "4,5,6,7",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "619,685,746,812",
+                        "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
-                        "endOffsets": "680,741,807,874"
+                        "endOffsets": "408,469,535,602"
                     }
                 }
             ]

@@ -8,4 +8,6 @@
     <string name="title_meal_detail">Details</string>
     <string name="title_add_meals">Add Meals</string>
     <string name="steak_meal">Steak Meal</string>
+    <string name="action_close">Close</string>
+    <string name="action_done">Done</string>
 </resources>
