@@ -1,6 +1,8 @@
 package com.bitebuilder;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -45,6 +47,7 @@ public class AddMealActivity extends BaseActivity {
 
         mealsReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
+<<<<<<< Updated upstream
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Go through meals in firebase database and get images, names, and ingredients from all
                 ArrayList<FoodItem> firebaseMeals = new ArrayList<>();
@@ -85,6 +88,43 @@ public class AddMealActivity extends BaseActivity {
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 Log.e("loadPost:onCancelled", databaseError.toException().toString());
+=======
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                FoodItem item = (FoodItem) parent.getItemAtPosition(position);
+                selectAndUpdateMeals(position);
+
+                DatabaseHelper mDbHelper = new DatabaseHelper(AddMealActivity.this);
+                SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+                // Add to SQLite database to appear on meal plan activity and highlight grid
+                if(item.getSelected()) {
+                    // Create a new map of values, where column names are the keys
+                    ContentValues values = new ContentValues();
+                    values.put("name", item.getName());
+                    values.put("imageUrl", item.getImageUrl());
+                    String ingredients = "";
+                    for(String ingredient : item.getIngredients()) {
+                        ingredients += ingredient + ",";
+                    }
+                    values.put("ingredients", ingredients);
+
+                    // Insert the new row, returning the primary key value of the new row
+                    long newRowId;
+                    newRowId = db.insert(
+                            "meal",
+                            null,
+                            values);
+                }
+
+                // Remove from SQLite database
+                else {
+                    db.delete("meal","name=?", new String[]{ item.getName() });
+                }
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             }
         });
 

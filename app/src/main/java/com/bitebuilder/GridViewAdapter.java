@@ -52,6 +52,20 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
         else {
             GlideApp.with(this.context).load(item.getImageReference()).into(holder.image);
         }
+<<<<<<< Updated upstream
+=======
+
+        if(layoutResourceId == R.layout.grid_add_item_layout && item.getSelected()) {
+            holder.layout.setBackgroundColor(ContextCompat.getColor(context, R.color.colorAccent));
+            holder.addImage.setImageResource(R.drawable.ic_check);
+            holder.addImage.setBackgroundColor(Color.WHITE);
+        }
+        else if(layoutResourceId == R.layout.grid_add_item_layout) {
+            holder.layout.setBackgroundColor(ContextCompat.getColor(context, R.color.gray));
+            holder.addImage.setImageResource(R.drawable.ic_add);
+            holder.addImage.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
+        }
+>>>>>>> Stashed changes
         return row;
     }
 

@@ -2,6 +2,8 @@
 <instant-run
     abi="x86"
     api-level="27"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
@@ -9,6 +11,24 @@
     timestamp="1524701767355"
     token="-6589170344565558219"
     verifier="COMPATIBLE" >
+=======
+    build-mode="FULL"
+    density="xxhdpi"
+    format="10"
+    plugin-version="3.1.1"
+    timestamp="1524765811195"
+    token="-6589170344565558219"
+    verifier="FULL_BUILD_REQUESTED" >
+>>>>>>> Stashed changes
+=======
+    build-mode="FULL"
+    density="xxhdpi"
+    format="10"
+    plugin-version="3.1.1"
+    timestamp="1524765811195"
+    token="-6589170344565558219"
+    verifier="FULL_BUILD_REQUESTED" >
+>>>>>>> Stashed changes
 
     <task
         name="javac"
@@ -24,11 +44,65 @@
         duration="0" />
 
     <artifact
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+=======
+=======
+>>>>>>> Stashed changes
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+>>>>>>> Stashed changes
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+<<<<<<< Updated upstream
+=======
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+>>>>>>> Stashed changes
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
         location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
         timestamp="1524699802682"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
@@ -36,6 +110,17 @@
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+=======
+        timestamp="1524765811195"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+=======
+        timestamp="1524765811195"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+>>>>>>> Stashed changes
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+>>>>>>> Stashed changes
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -56,7 +141,17 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
+<<<<<<< Updated upstream
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+=======
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+>>>>>>> Stashed changes
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -71,6 +166,8 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <build
         build-mode="COLD"
         timestamp="1524700900122"
@@ -116,5 +213,9 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
     </build>
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 </instant-run>

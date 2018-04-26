@@ -8,6 +8,18 @@ public class FoodItem {
     private String[] ingredients;
     private StorageReference imageReference;
 
+<<<<<<< Updated upstream
+=======
+    public FoodItem(Parcel in) {
+        super();
+        String[] ingredients = new String[20];
+        in.readStringArray(ingredients);
+        this.ingredients = ingredients;
+        this.name = in.readString();
+        this.imageUrl = in.readString();
+    }
+
+>>>>>>> Stashed changes
     public FoodItem(int image, String name) {
         super();
         this.image = image;
@@ -21,6 +33,24 @@ public class FoodItem {
         this.ingredients = ingredients;
     }
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
+    public FoodItem(String name, String imageUrl, String ingredients) {
+        super();
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.ingredients = new String[20];
+        for(int i = 0; i < ingredients.split(",").length; i++) {
+            this.ingredients[i] = ingredients.split(",")[i];
+        }
+    }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
     public int getImage() {
         return image;
