@@ -36,7 +36,7 @@ public class DietActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+
     }
 
 

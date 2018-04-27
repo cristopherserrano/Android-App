@@ -7,22 +7,22 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.1.2"
-    timestamp="1524790826100"
+    timestamp="1524797165247"
     token="-4076128687214029485"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="804" />
+        duration="1494" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="33" />
+        duration="32" />
     <task
         name="verifier"
-        duration="3" />
+        duration="4" />
 
     <artifact
         location="/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -101,7 +101,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524790625187"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1524796417621"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -110,7 +111,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1524790826100"
+        timestamp="1524797165247"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
