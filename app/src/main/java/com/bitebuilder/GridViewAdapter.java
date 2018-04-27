@@ -2,12 +2,17 @@ package com.bitebuilder;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -32,28 +37,33 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
         View row = convertView;
         ViewHolder holder;
 
+        FoodItem item = data.get(position);
+
         if (row == null) {
             LayoutInflater inflater = ((Activity) context).getLayoutInflater();
             row = inflater.inflate(layoutResourceId, parent, false);
             holder = new ViewHolder();
             holder.imageName = (TextView) row.findViewById(R.id.mealText);
             holder.image = (ImageView) row.findViewById(R.id.mealImage);
+
+            holder.imageName.setText(item.getName());
+
+            if(layoutResourceId == R.layout.grid_add_item_layout) {
+                holder.addImage = (ImageView) row.findViewById(R.id.addMealImage);
+                holder.layout = (RelativeLayout) row.findViewById(R.id.gridAddItemLayout);
+            }
             row.setTag(holder);
         }
         else {
             holder = (ViewHolder) row.getTag();
         }
 
-        FoodItem item = data.get(position);
-        holder.imageName.setText(item.getName());
         if(item.getImage() != 0) {
             holder.image.setImageResource(item.getImage());
         }
         else {
             GlideApp.with(this.context).load(item.getImageReference()).into(holder.image);
         }
-<<<<<<< Updated upstream
-=======
 
         if(layoutResourceId == R.layout.grid_add_item_layout && item.getSelected()) {
             holder.layout.setBackgroundColor(ContextCompat.getColor(context, R.color.colorAccent));
@@ -65,12 +75,13 @@ public class GridViewAdapter extends ArrayAdapter<FoodItem> {
             holder.addImage.setImageResource(R.drawable.ic_add);
             holder.addImage.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
         }
->>>>>>> Stashed changes
         return row;
     }
 
     static class ViewHolder {
         TextView imageName;
         ImageView image;
+        ImageView addImage;
+        RelativeLayout layout;
     }
 }

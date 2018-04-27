@@ -2,125 +2,43 @@
 <instant-run
     abi="x86"
     api-level="27"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
-    plugin-version="3.1.1"
-    timestamp="1524701767355"
+    plugin-version="3.1.2"
+    timestamp="1524805229522"
     token="-6589170344565558219"
     verifier="COMPATIBLE" >
-=======
-    build-mode="FULL"
-    density="xxhdpi"
-    format="10"
-    plugin-version="3.1.1"
-    timestamp="1524765811195"
-    token="-6589170344565558219"
-    verifier="FULL_BUILD_REQUESTED" >
->>>>>>> Stashed changes
-=======
-    build-mode="FULL"
-    density="xxhdpi"
-    format="10"
-    plugin-version="3.1.1"
-    timestamp="1524765811195"
-    token="-6589170344565558219"
-    verifier="FULL_BUILD_REQUESTED" >
->>>>>>> Stashed changes
 
     <task
         name="javac"
-        duration="0" />
+        duration="1689" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="84" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="57" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
     <artifact
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-=======
-=======
->>>>>>> Stashed changes
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
->>>>>>> Stashed changes
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-<<<<<<< Updated upstream
-=======
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
->>>>>>> Stashed changes
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        timestamp="1524699802682"
+        timestamp="1524801805951"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-=======
-        timestamp="1524765811195"
-        verifier="FULL_BUILD_REQUESTED" >
+            type="SPLIT" />
         <artifact
-=======
-        timestamp="1524765811195"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
->>>>>>> Stashed changes
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
->>>>>>> Stashed changes
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -132,29 +50,13 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-<<<<<<< Updated upstream
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-=======
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
->>>>>>> Stashed changes
-            type="SPLIT" />
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -163,29 +65,16 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    <build
-        build-mode="COLD"
-        timestamp="1524700900122"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524701574272"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-            type="SPLIT" />
+        timestamp="1524804047048"
+        verifier="CLASS_ADDED" >
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
@@ -193,29 +82,36 @@
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1524701767355"
-        verifier="COMPATIBLE" >
+        build-mode="COLD"
+        timestamp="1524805158375"
+        verifier="FIELD_ADDED" >
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
     </build>
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1524805229522"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
 
 </instant-run>
