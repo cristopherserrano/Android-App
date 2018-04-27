@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MealPlanActivity"
-            android:label="@string/title_meal_plan"/>
+            android:theme="@style/NoActionBar"/>
         <activity
             android:name=".AddMealActivity"
             android:theme="@style/NoActionBar" />

@@ -2,6 +2,7 @@ package com.bitebuilder;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -70,22 +71,37 @@ public class AddMealActivity extends BaseActivity {
 
                 // Add to SQLite database to appear on meal plan activity and highlight grid
                 if(item.getSelected()) {
-                    // Create a new map of values, where column names are the keys
-                    ContentValues values = new ContentValues();
-                    values.put("name", item.getName());
-                    values.put("imageUrl", item.getImageUrl());
-                    String ingredients = "";
-                    for(String ingredient : item.getIngredients()) {
-                        ingredients += ingredient + ",";
-                    }
-                    values.put("ingredients", ingredients);
+                    String query = "SELECT * FROM " + "meal";
+                    Cursor cursor = db.rawQuery(query, null);
+                    int columnNumber = cursor.getColumnIndex("name");
+                    boolean exists = false;
 
-                    // Insert the new row, returning the primary key value of the new row
-                    long newRowId;
-                    newRowId = db.insert(
-                            "meal",
-                            null,
-                            values);
+                    while (cursor.moveToNext()) {
+                        String num = cursor.getString(columnNumber);
+                        if(num.equals(item.getName())) {
+                            exists = true;
+                        }
+                    }
+                    cursor.close();
+
+                    if(!exists) {
+                        // Create a new map of values, where column names are the keys
+                        ContentValues values = new ContentValues();
+                        values.put("name", item.getName());
+                        values.put("imageUrl", item.getImageUrl());
+                        String ingredients = "";
+                        for(String ingredient : item.getIngredients()) {
+                            ingredients += ingredient + ",";
+                        }
+                        values.put("ingredients", ingredients);
+
+                        // Insert the new row, returning the primary key value of the new row
+                        long newRowId;
+                        newRowId = db.insert(
+                                "meal",
+                                null,
+                                values);
+                    }
                 }
 
                 // Remove from SQLite database

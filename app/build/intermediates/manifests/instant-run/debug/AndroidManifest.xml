@@ -35,7 +35,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.bitebuilder.MealPlanActivity"
-            android:label="@string/title_meal_plan" />
+            android:theme="@style/NoActionBar" />
         <activity
             android:name="com.bitebuilder.AddMealActivity"
             android:theme="@style/NoActionBar" />

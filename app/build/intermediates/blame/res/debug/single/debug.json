@@ -244,6 +244,10 @@
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\adda3dcbe51de930add3385e951a810d\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\menu_meal_plan_menu.xml.flat",
+        "source": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\src\\main\\res\\menu\\meal_plan_menu.xml"
+    },
+    {
         "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\adda3dcbe51de930add3385e951a810d\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
     },
