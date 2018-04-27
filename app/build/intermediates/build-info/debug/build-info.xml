@@ -2,26 +2,30 @@
 <instant-run
     abi="x86"
     api-level="27"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xxhdpi"
     format="10"
     plugin-version="3.1.2"
-    timestamp="1524820118036"
+    timestamp="1524824571670"
     token="-6589170344565558219"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1884" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="50" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="56" />
     <task
         name="verifier"
-        duration="0" />
+        duration="10" />
+
+    <artifact
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
@@ -96,8 +100,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1524816627430"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1524823486569"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
@@ -105,15 +109,43 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1524820066567"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1524824224385"
+        verifier="METHOD_DELETED" >
         <artifact
             location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
     </build>
     <build
-        build-mode="COLD"
-        timestamp="1524820118036"
-        verifier="COLD_SWAP_REQUESTED" />
+        build-mode="HOT_WARM"
+        timestamp="1524824334484"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\builds\debug\1524824334484\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1524824345342"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\builds\debug\1524824345342\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1524824430412"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\builds\debug\1524824430412\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1524824571670"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
 
 </instant-run>

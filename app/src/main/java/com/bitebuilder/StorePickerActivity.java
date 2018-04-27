@@ -30,13 +30,11 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLocation();
-
-        loadNearByStores(lat, lon);
+        loadNearByStores();
 
     }
 
     private void getLocation() {
-        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         if ( Build.VERSION.SDK_INT >= 23 &&
                 ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -44,17 +42,16 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
         }
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestSingleUpdate(LocationManager.GPS_PROVIDER, this, null);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1, this);
     }
 
-    private void loadNearByStores(double latitude, double longitude) {
-
+    private void loadNearByStores() {
         Intent i = getIntent();
         String type = "grocery";
 
         StringBuilder googlePlacesUrl =
                 new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlacesUrl.append("location=").append(latitude).append(",").append(longitude);
+        googlePlacesUrl.append("location=").append(lat).append(",").append(lon);
         googlePlacesUrl.append("&radius=").append(500);
         googlePlacesUrl.append("&types=").append(type);
         googlePlacesUrl.append("&sensor=true");
@@ -70,8 +67,6 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.e("", "onErrorResponse: Error= " + error);
-                        Log.e("", "onErrorResponse: Error= " + error.getMessage());
                     }
                 });
 
@@ -81,8 +76,21 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
 
     @Override
     public void onLocationChanged(Location location) {
+        Log.i("onResponse", "onResponse: " + lat.toString() + ", " + lon.toString());
         lat = location.getLatitude();
         lon = location.getLongitude();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 1: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    getLocation();
+                }
+                return;
+            }
+        }
     }
 
     @Override
