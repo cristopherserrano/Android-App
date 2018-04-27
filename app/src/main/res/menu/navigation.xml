@@ -12,14 +12,9 @@
         android:title="@string/title_grocery_list" />
 
     <item
-        android:id="@+id/navigation_favorites"
-        android:icon="@drawable/ic_favorite"
-        android:title="@string/title_favorites" />
-
-    <item
-        android:id="@+id/navigation_checker"
-        android:icon="@drawable/ic_check"
-        android:title="@string/title_checker" />
+        android:id="@+id/navigation_store"
+        android:icon="@drawable/ic_store_black_24dp"
+        android:title="@string/title_store" />
 
     <item
         android:id="@+id/navigation_settings"

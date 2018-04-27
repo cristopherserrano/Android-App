@@ -45,13 +45,9 @@ public abstract class BaseActivity extends AppCompatActivity implements BottomNa
                 Intent groceryListIntent = new Intent(getApplicationContext(), GroceryListActivity.class);
                 startActivity(groceryListIntent);
                 return true;
-            case R.id.navigation_favorites:
-                Intent favoritesIntent = new Intent(getApplicationContext(), FavoritesActivity.class);
-                startActivity(favoritesIntent);
-                return true;
-            case R.id.navigation_checker:
-                Intent checkerIntent = new Intent(getApplicationContext(), MealCheckerActivity.class);
-                startActivity(checkerIntent);
+            case R.id.navigation_store:
+                Intent storePickerIntent = new Intent(getApplicationContext(), StorePickerActivity.class);
+                startActivity(storePickerIntent);
                 return true;
             case R.id.navigation_settings:
                 Intent settingsIntent = new Intent(getApplicationContext(), SettingsActivity.class);

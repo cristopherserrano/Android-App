@@ -3,6 +3,7 @@
     package="com.bitebuilder">
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -22,12 +23,8 @@
             android:label="@string/title_grocery_list"
             />
         <activity
-            android:name=".FavoritesActivity"
-            android:label="@string/title_favorites"
-            />
-        <activity
-            android:name=".MealCheckerActivity"
-            android:label="@string/title_checker"
+            android:name=".StorePickerActivity"
+            android:label="@string/title_store"
             />
         <activity
             android:name=".SettingsActivity"

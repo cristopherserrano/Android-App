@@ -700,6 +700,10 @@
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_store_picker.xml.flat",
+        "source": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\src\\main\\res\\layout\\activity_store_picker.xml"
+    },
+    {
         "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
@@ -828,6 +832,10 @@
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_store_black_24dp.xml.flat",
+        "source": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\src\\main\\res\\drawable\\ic_store_black_24dp.xml"
+    },
+    {
         "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -874,10 +882,6 @@
     {
         "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_meal_checker.xml.flat",
-        "source": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\src\\main\\res\\layout\\activity_meal_checker.xml"
     },
     {
         "merged": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",

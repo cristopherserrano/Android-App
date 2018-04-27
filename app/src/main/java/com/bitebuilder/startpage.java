@@ -77,7 +77,6 @@ public class startpage extends AppCompatActivity {
 
     public void SignIn(View view) {
 
-
         DatabaseReference database= FirebaseDatabase.getInstance().getReference().child("users");
 
         database.addListenerForSingleValueEvent(new ValueEventListener() {

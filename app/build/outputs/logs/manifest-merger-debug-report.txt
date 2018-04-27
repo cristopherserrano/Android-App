@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\7201a8643955dbdf6ad22b38bf0df63b\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\bb7aec419ccc8e0610f0a1e7b8892f95\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f064881eea4bc457f3d833ff0ca06ea9\AndroidManifest.xml:2:1-11:12
@@ -13,6 +13,7 @@ MERGED from [com.google.firebase:firebase-database:15.0.0] C:\Users\David\.gradl
 MERGED from [com.firebaseui:firebase-ui-storage:3.3.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-ui-storage-3.3.0.aar\1c563b82d6fcb5ae766b30616c5fb1c4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-storage:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-storage-15.0.0.aar\4e9556672beb5f6db973fab0c491439a\AndroidManifest.xml:2:1-8:12
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\f91036a96791c902479dda2af1664336\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a33d297fb1428adae68f95ac0ff4a0b1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-database-connection:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-15.0.0.aar\90b06db71671ed44df9993e286c4b849\AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:17:1-55:12
 MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:17:1-41:12
@@ -39,20 +40,20 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\David\.gradle\cach
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\a1a08d5a8310a0be4dc97d97d78f1a79\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\a54ef791b05d952b54d384ec65c10670\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\d3b3a09227be515ea6f6e63795c52e4c\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-59:12
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:11-69
@@ -64,14 +65,26 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:5:5-78
 	android:name
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:5:22-76
+uses-permission#android.permission.INTERNET
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\054cae6e9aa461924db42ac99e443e07\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\054cae6e9aa461924db42ac99e443e07\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:7:5-60:19
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:8:5-57:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f064881eea4bc457f3d833ff0ca06ea9\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f064881eea4bc457f3d833ff0ca06ea9\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a8175d977bd7a8278b26d34d86a11514\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\a8175d977bd7a8278b26d34d86a11514\AndroidManifest.xml:7:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\f91036a96791c902479dda2af1664336\AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\f91036a96791c902479dda2af1664336\AndroidManifest.xml:11:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a33d297fb1428adae68f95ac0ff4a0b1\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a33d297fb1428adae68f95ac0ff4a0b1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:28:5-53:19
 MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:28:5-39:19
@@ -93,93 +106,87 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\David\.gradle\
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\a54ef791b05d952b54d384ec65c10670\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\a54ef791b05d952b54d384ec65c10670\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:13:9-40
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:14:9-40
 activity#com.bitebuilder.MealPlanActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:14:9-16:49
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:15:9-17:49
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:16:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:17:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:16:13-45
 activity#com.bitebuilder.AddMealActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:17:9-19:50
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:18:9-20:50
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:19:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:20:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:18:13-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:19:13-44
 activity#com.bitebuilder.GroceryListActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:20:9-23:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:21:9-24:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:22:13-55
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:23:13-55
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:21:13-48
-activity#com.bitebuilder.FavoritesActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:24:9-27:15
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:22:13-48
+activity#com.bitebuilder.StorePickerActivity
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:25:9-28:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:26:13-52
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:27:13-48
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:25:13-46
-activity#com.bitebuilder.MealCheckerActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:28:9-31:15
-	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:30:13-50
-	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:29:13-48
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:26:13-48
 activity#com.bitebuilder.SettingsActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:32:9-35:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:29:9-32:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:34:13-51
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:31:13-51
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:33:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:30:13-45
 activity#com.bitebuilder.startpage
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:9-44:20
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:34:9-41:20
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:38:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:35:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:19-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:34:19-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:39:13-43:29
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:17-77
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:27-74
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:39:27-74
 activity#com.bitebuilder.MealDetailActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:45:9-46:54
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:9-43:54
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:46:13-52
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:43:13-52
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:45:19-53
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:19-53
 activity#com.bitebuilder.AboutYouActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:48:9-51:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:45:9-48:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:50:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:47:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:49:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:46:13-45
 activity#com.bitebuilder.AllergyActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:52:9-55:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:49:9-52:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:54:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:51:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:53:13-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:50:13-44
 activity#com.bitebuilder.DietActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:56:9-59:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:53:9-56:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:58:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:55:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:57:13-41
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:54:13-41
 uses-sdk
 INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
@@ -202,6 +209,8 @@ MERGED from [com.google.firebase:firebase-storage:15.0.0] C:\Users\David\.gradle
 MERGED from [com.google.firebase:firebase-storage:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-storage-15.0.0.aar\4e9556672beb5f6db973fab0c491439a\AndroidManifest.xml:6:5-44
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\f91036a96791c902479dda2af1664336\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\glide-4.7.1.aar\f91036a96791c902479dda2af1664336\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a33d297fb1428adae68f95ac0ff4a0b1\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\a33d297fb1428adae68f95ac0ff4a0b1\AndroidManifest.xml:7:5-43
 MERGED from [com.google.firebase:firebase-database-connection:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-15.0.0.aar\90b06db71671ed44df9993e286c4b849\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database-connection:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-database-connection-15.0.0.aar\90b06db71671ed44df9993e286c4b849\AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:20:5-44
@@ -264,14 +273,6 @@ INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\Andr
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\054cae6e9aa461924db42ac99e443e07\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-iid-15.0.0.aar\054cae6e9aa461924db42ac99e443e07\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-15.0.0.aar\ea8dbe54bc97a4879ad8c5835723ca97\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-analytics-impl:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-15.0.0.aar\b86f2f2223a6e0101d2bd27ed78ca005\AndroidManifest.xml:24:5-79
