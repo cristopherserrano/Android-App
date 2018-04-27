@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ca\\values-ca.xml",
+            "outputFile": "/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\adda3dcbe51de930add3385e951a810d\\res\\values-ca\\values-ca.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,329,436,519,627,753,837,918,1001,1112,1221,1319,1429,1533,1641,1801,1900",
-                        "endColumns": "117,105,106,82,107,125,83,80,82,110,108,97,109,103,107,159,98,80",
-                        "endOffsets": "218,324,431,514,622,748,832,913,996,1107,1216,1314,1424,1528,1636,1796,1895,1976"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,329,436,519,627,753,837,918,1001,1112,1221,1319,1429,1533,1641,1801,2094",
-                        "endColumns": "117,105,106,82,107,125,83,80,82,110,108,97,109,103,107,159,98,80",
-                        "endOffsets": "218,324,431,514,622,748,832,913,996,1107,1216,1314,1424,1528,1636,1796,1895,2170"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\3aea7ee34205a7859aea168179bae016\\res\\values-ca\\values-ca.xml",
+                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9d9a3dd6fb048a6dc8fa1358312087c4/res/values-ca/values-ca.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.0.aar\\d69c6cc39f3c22de116c6a386e6f6d59\\res\\values-ca\\values.xml",
+                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a5c94748576f4c66bad77ff866c20081/res/values-ca/values-ca.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,329,436,519,627,753,837,918,1001,1112,1221,1319,1429,1533,1641,1801,1900",
+                        "endColumns": "117,105,106,82,107,125,83,80,82,110,108,97,109,103,107,159,98,80",
+                        "endOffsets": "218,324,431,514,622,748,832,913,996,1107,1216,1314,1424,1528,1636,1796,1895,1976"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,329,436,519,627,753,837,918,1001,1112,1221,1319,1429,1533,1641,1801,2094",
+                        "endColumns": "117,105,106,82,107,125,83,80,82,110,108,97,109,103,107,159,98,80",
+                        "endOffsets": "218,324,431,514,622,748,832,913,996,1107,1216,1314,1424,1528,1636,1796,1895,2170"
+                    }
+                },
+                {
+                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/dc702390b5ff7c0a20c5044caa17605c/res/values-ca/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

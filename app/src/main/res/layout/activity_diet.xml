@@ -7,206 +7,66 @@
         android:gravity="center_vertical"
         android:background="?android:attr/selectableItemBackground">
 
-        <CheckBox
-            android:id="@+id/done_checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:onClick="classic_clicked"
-            android:scaleX="1.50"
-            android:scaleY="1.50" />
 
-        <TextView
-        android:id="@+id/entry_name"
+        <Button
+        android:id="@+id/classic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/done_checkbox"
+        android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
         android:gravity="center_vertical"
-        android:text="Classic "
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="classic_clicked"
+            android:text="Classic:  For A No Restriction Diet " />
 
-    <TextView
-        android:id="@+id/entry_due_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/entry_name"
-        android:layout_toRightOf="@id/done_checkbox"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="No restriction "
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-
-    <CheckBox
-        android:id="@+id/done_lowcarb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/entry_due_date"
-        android:gravity="center_vertical"
-        android:onClick="lowcarb_clicked"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
-
-    <TextView
+    <Button
         android:id="@+id/lowcarb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/done_lowcarb"
-        android:layout_alignBottom="@+id/done_lowcarb"
-        android:layout_toEndOf="@+id/done_lowcarb"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/classic"
         android:gravity="center_vertical"
-        android:text="Low Carb"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="lowcarb_clicked"
+        android:text="Low Carb: Less Carb More Proteins and Fats" />
 
-    <TextView
-        android:id="@+id/lowcarb_descrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lowcarb"
-        android:layout_toEndOf="@+id/done_lowcarb"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="Easy on the carbs"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <CheckBox
-        android:id="@+id/done_paleo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lowcarb_descrip"
-        android:gravity="center_vertical"
-        android:onClick="paleo_clicked"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
-
-    <TextView
+    <Button
         android:id="@+id/paleo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/done_paleo"
-        android:layout_alignBottom="@+id/done_paleo"
-        android:layout_toEndOf="@+id/done_paleo"
+        android:layout_below="@id/lowcarb"
         android:gravity="center_vertical"
-        android:text="Paleo"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="paleo_clicked"
+        android:text="Paleo:Eat Like A Caveman" />
 
-    <TextView
-        android:id="@+id/paleo_descrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/done_paleo"
-        android:layout_toEndOf="@+id/done_paleo"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="Eat like a caveman"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <CheckBox
-        android:id="@+id/done_pescatarian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/paleo_descrip"
-        android:gravity="center_vertical"
-        android:onClick="pescatarian_clicked"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
-
-    <TextView
+    <Button
         android:id="@+id/pescatarian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/done_pescatarian"
-        android:layout_alignBottom="@+id/done_pescatarian"
-        android:layout_toEndOf="@+id/done_pescatarian"
+        android:layout_below="@id/paleo"
         android:gravity="center_vertical"
-        android:text="Pescatarian"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="pescatarian_clicked"
+        android:text="Pescatarian: Vegetables + Seafood" />
 
-    <TextView
-        android:id="@+id/pescatarian_descrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/done_pescatarian"
-        android:layout_toEndOf="@+id/done_pescatarian"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="Vegetarian + Seafood "
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <CheckBox
-        android:id="@+id/done_vegetarian"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pescatarian_descrip"
-        android:gravity="center_vertical"
-        android:onClick="vegetarian_clicked"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
-
-    <TextView
+    <Button
         android:id="@+id/vegetarian"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/done_vegetarian"
-        android:layout_alignBottom="@+id/done_vegetarian"
-        android:layout_toEndOf="@+id/done_vegetarian"
+        android:layout_below="@id/pescatarian"
         android:gravity="center_vertical"
-        android:text="Vegetarian"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="vegetarian_clicked"
+        android:text="Vegetarian: 0 Meat" />
 
-    <TextView
-        android:id="@+id/vegetarian_descrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/done_vegetarian"
-        android:layout_toEndOf="@+id/done_vegetarian"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="0 Meat"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <CheckBox
-        android:id="@+id/done_vegan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/vegetarian_descrip"
-        android:gravity="center_vertical"
-        android:onClick="vegan_clicked"
-        android:scaleX="1.50"
-        android:scaleY="1.50" />
-
-    <TextView
+    <Button
         android:id="@+id/vegan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/done_vegan"
-        android:layout_alignBottom="@+id/done_vegan"
-        android:layout_toEndOf="@+id/done_vegan"
+        android:layout_below="@id/vegetarian"
         android:gravity="center_vertical"
-        android:text="Vegan "
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:onClick="vegan_clicked"
+        android:text="Vegan: No animals or their products " />
 
-    <TextView
-        android:id="@+id/vegan_descrip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/done_vegan"
-        android:layout_toEndOf="@+id/done_vegan"
-        android:gravity="center_vertical"
-        android:singleLine="true"
-        android:text="No animals at all or their products "
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/vegan_descrip"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="137dp"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:onClick="next1"
-        android:text="NEXT"
-        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

@@ -9,61 +9,95 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
+    <ToggleButton
         android:id="@+id/dairy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Dairy" />
+        android:background="@drawable/my_btn_toggle"
+        android:text="Dairy"
+        android:textOff="Diary"
+        android:textOn="Diary"
+        android:onClick="diary_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/Egg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/dairy"
-        android:layout_below="@+id/dairy"
-        android:text="Egg" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Eggs"
+        android:textOff="Eggs"
+        android:textOn="Egg"
+        android:onClick="egg_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/FIsh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/soy"
         android:layout_below="@+id/soy"
-        android:text="Fish" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Fish"
+        android:textOff="Fish"
+        android:textOn="Fish"
+        android:onClick="fish_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/Gluten"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Egg"
         android:layout_centerHorizontal="true"
-        android:text="Gluten" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Gluten"
+        android:textOff="Gluten"
+        android:textOn="Gluten"
+        android:onClick="gluten_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/Nuts"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Egg"
         android:layout_below="@+id/Gluten"
-        android:text="Nuts" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Nuts"
+        android:textOff="Nuts"
+        android:textOn="Nuts"
+        android:onClick="nuts_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/Shellfish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Nuts"
         android:layout_centerHorizontal="true"
-        android:text="Shellfish" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Shellfish"
+        android:textOff="Shellfish"
+        android:textOn="Shellfish"
+        android:onClick="shellfish_clicked"/>
 
-    <Button
+    <ToggleButton
         android:id="@+id/soy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/Nuts"
         android:layout_below="@+id/Shellfish"
-        android:text="Soy" />
+        android:layout_marginTop="10dp"
+        android:background="@drawable/my_btn_toggle"
+        android:text="Soy"
+        android:textOff="Soy"
+        android:textOn="Soy"
+        android:onClick="soy_clicked"/>
 
     <Button
         android:id="@+id/next"
@@ -72,6 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/FIsh"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:onClick="next2"
         android:text="Next"

@@ -15,14 +15,14 @@
         android:layout_marginStart="85dp"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Username "
+        android:hint="Username"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
-    <EditText
+    <TextView
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -32,7 +32,9 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="About You: "
+        android:text="Create Account"
+        android:textSize="20dp"
+        android:textColor="#000"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +49,7 @@
         android:layout_marginEnd="84dp"
         android:layout_marginStart="85dp"
         android:ems="10"
-        android:hint="Password "
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/conpass"
         app:layout_constraintEnd_toEndOf="parent"
