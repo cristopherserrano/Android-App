@@ -2,7 +2,7 @@
     <string name="app_name">Bite Builder</string>
     <string name="title_meal_plan">Meal Plan</string>
     <string name="title_grocery_list">Grocery List</string>
-    <string name="title_favorites">Favorites</string>
+    <string name="title_store">Store</string>
     <string name="title_checker">Meal Checker</string>
     <string name="title_settings">Settings</string>
     <string name="title_meal_detail">Details</string>

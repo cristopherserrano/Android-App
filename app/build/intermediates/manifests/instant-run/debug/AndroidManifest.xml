@@ -10,8 +10,6 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <!-- Required permission for App measurement to run. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -43,11 +41,8 @@
             android:name="com.bitebuilder.GroceryListActivity"
             android:label="@string/title_grocery_list" />
         <activity
-            android:name="com.bitebuilder.FavoritesActivity"
-            android:label="@string/title_favorites" />
-        <activity
-            android:name="com.bitebuilder.MealCheckerActivity"
-            android:label="@string/title_checker" />
+            android:name="com.bitebuilder.StorePickerActivity"
+            android:label="@string/title_store" />
         <activity
             android:name="com.bitebuilder.SettingsActivity"
             android:label="@string/title_settings" />
