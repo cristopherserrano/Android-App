@@ -115,10 +115,19 @@ public class startpage extends AppCompatActivity {
                 ArrayList<String> users = new ArrayList<>();
                 ArrayList<String> passwords = new ArrayList<>();
                 for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
-                    String password = userSnapshot.child("password").getValue().toString();
-                    String username = userSnapshot.child("username").getValue().toString();
-                    passwords.add(password);
-                    users.add(username);
+                    if(userSnapshot.hasChild("password") && userSnapshot.hasChild("username")) {
+                        String password = userSnapshot.child("password").getValue().toString();
+                        String username = userSnapshot.child("username").getValue().toString();
+                        passwords.add(password);
+                        users.add(username);
+                    }
+                    else {
+                        Context context = getApplicationContext();
+                        CharSequence text = "There is no account that matches those credentials";
+                        int duration = Toast.LENGTH_SHORT;
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+                    }
                 }
 
                 verify(users, passwords);
