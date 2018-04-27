@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context="com.bitebuilder.MealPlanActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Meal Plan"
+        app:titleTextColor="@color/white"
+        app:menu="@menu/meal_plan_menu"/>
+
     <GridView
         android:id="@+id/mealPlanGridView"
         android:layout_width="fill_parent"
@@ -14,10 +24,13 @@
         android:layout_margin="5dp"
         android:columnWidth="150dp"
         android:drawSelectorOnTop="true"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:gravity="center"
         android:numColumns="auto_fit"
         android:stretchMode="columnWidth"
         android:verticalSpacing="5dp"
+        android:scrollbars="vertical"
+        android:paddingBottom="60dp"
         android:focusable="true"
         android:clickable="true"/>
 
@@ -28,7 +41,8 @@
         android:src="@drawable/ic_add"
         android:layout_margin="16dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/navigation" />
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        android:onClick="addMeals"/>
 
 
     <android.support.design.widget.BottomNavigationView
