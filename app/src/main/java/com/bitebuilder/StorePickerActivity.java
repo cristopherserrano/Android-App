@@ -16,7 +16,6 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.google.android.gms.common.api.Response;
 
 import org.json.JSONObject;
 
@@ -63,18 +62,18 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject result) {
-                        Log.i(TAG, "onResponse: Result= " + result.toString());
+                        Log.i("", "onResponse: Result= " + result.toString());
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Log.e(TAG, "onErrorResponse: Error= " + error);
-                        Log.e(TAG, "onErrorResponse: Error= " + error.getMessage());
+                        Log.e("", "onErrorResponse: Error= " + error);
+                        Log.e("", "onErrorResponse: Error= " + error.getMessage());
                     }
                 });
 
-        AppController.getInstance().addToRequestQueue(request);
+//        AppController.getInstance().addToRequestQueue(request);
     }
 
     @Override
