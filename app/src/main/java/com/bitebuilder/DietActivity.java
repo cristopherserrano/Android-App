@@ -41,7 +41,7 @@ public class DietActivity extends AppCompatActivity {
 
 
 
-    public void classic_clicked(){
+    public void classic_clicked(View view){
 //        databaseReference.child("user").child("david").child("diet").setValue("classic");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "classic");
@@ -49,35 +49,35 @@ public class DietActivity extends AppCompatActivity {
 
     }
 
-    public void lowcarb_clicked(){
+    public void lowcarb_clicked(View view){
 //        databaseReference.child("user").child("diet").setValue("lowcarb");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "lowcarb");
         startActivity(intent);
 
     }
-    public void paleo_clicked(){
+    public void paleo_clicked(View view){
 //        databaseReference.child("user").child("diet").setValue("paleo");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "paleo");
         startActivity(intent);
 
     }
-    public void pescatarian_clicked(){
+    public void pescatarian_clicked(View view){
 //        databaseReference.child("user").child("diet").setValue("pescatarian");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "pescatarian");
         startActivity(intent);
 
     }
-    public void vegetarian_clicked(){
+    public void vegetarian_clicked(View view){
 //        databaseReference.child("user").child("diet").setValue("vegetarian");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "vegetarian");
         startActivity(intent);
 
     }
-    public void vegan_clicked(){
+    public void vegan_clicked(View view){
 //        databaseReference.child("user").child("diet").setValue("vegan");
         Intent intent = new Intent(this, AllergyActivity.class);
         intent.putExtra("diet", "vegan");

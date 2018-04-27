@@ -69,16 +69,4 @@
         android:text="Vegan: No animals or their products " />
 
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/holo_green_light"
-        android:onClick="next1"
-        android:text="NEXT"
-        android:textColor="#FFFFFF" />
-
-
 </RelativeLayout>
