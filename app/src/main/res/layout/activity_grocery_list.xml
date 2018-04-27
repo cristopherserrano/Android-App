@@ -8,7 +8,7 @@
     tools:context="com.bitebuilder.GroceryListActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvAnimals"
+        android:id="@+id/groceryList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

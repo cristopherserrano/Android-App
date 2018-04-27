@@ -2,10 +2,16 @@ package com.bitebuilder;
 
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.firebase.database.DataSnapshot;
@@ -16,10 +22,13 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class GroceryListActivity extends BaseActivity {
+public class GroceryListActivity extends BaseActivity implements GroceryListAdapter.ItemClickListener {
 
-    ArrayList<String> bucketList;
+    ArrayList<String> ingredientsList;
+    ArrayList<FoodItem> meals;
     RecyclerView rvBucketList;
+    GroceryListAdapter adapter;
+    DatabaseHelper mDbHelper;
 
     LocationManager locationManager;
     private static final int TAKE_PHOTO_PERMISSION = 1;
@@ -34,6 +43,21 @@ public class GroceryListActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        ingredientsList = new ArrayList<>();
+        meals = new ArrayList<>();
+        mDbHelper = new DatabaseHelper(this);
+        downloadMeals();
+        populateIngredients();
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.groceryList);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(layoutManager);
+        adapter = new GroceryListAdapter(this, ingredientsList);
+        adapter.setClickListener(this);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
+                layoutManager.getOrientation());
+        recyclerView.addItemDecoration(dividerItemDecoration);
+        recyclerView.setAdapter(adapter);
 
     }
 
@@ -45,6 +69,47 @@ public class GroceryListActivity extends BaseActivity {
     @Override
     public int getNavigationMenuItemId() {
         return R.id.navigation_grocery_list;
+    }
+
+    @Override
+    public void onItemClick(View view, int position) {
+        Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
+    }
+
+    public void downloadMeals() {
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+        String[] projection = {
+                "name",
+                "imageUrl",
+                "ingredients"
+        };
+        Cursor cursor = db.query(
+                "meal",
+                projection,
+                null,
+                null,
+                null,
+                null,
+                null
+        );
+        while(cursor.moveToNext()) {
+            String curName = cursor.getString(cursor.getColumnIndexOrThrow("name"));
+            String curImageUrl = cursor.getString(cursor.getColumnIndexOrThrow("imageUrl"));
+            String curIngredients = cursor.getString(cursor.getColumnIndexOrThrow("ingredients"));
+
+            FoodItem meal = new FoodItem(curName, curImageUrl, curIngredients);
+            meals.add(meal);
+        }
+    }
+
+    public void populateIngredients() {
+        for(FoodItem meal : meals) {
+            for(String ingredient : meal.getIngredients()) {
+                if(!ingredientsList.contains(ingredient) && !ingredient.equals("null")) {
+                    ingredientsList.add(ingredient);
+                }
+            }
+        }
     }
 
 //
