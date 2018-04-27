@@ -24,6 +24,7 @@ import org.json.JSONObject;
 public class StorePickerActivity extends BaseActivity implements LocationListener {
 
     LocationManager locationManager;
+    Location location;
     Double lat = 0.0, lon = 0.0;
 
     @Override
@@ -42,7 +43,8 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
         }
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 2000, 1, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, this);
+        location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
     }
 
     private void loadNearByStores() {
@@ -76,7 +78,6 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
 
     @Override
     public void onLocationChanged(Location location) {
-        Log.i("onResponse", "onResponse: " + lat.toString() + ", " + lon.toString());
         lat = location.getLatitude();
         lon = location.getLongitude();
     }

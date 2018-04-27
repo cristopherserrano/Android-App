@@ -144,7 +144,7 @@ ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\Android
 activity#com.bitebuilder.SettingsActivity
 ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:29:9-32:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:31:13-51
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:30:13-45
 activity#com.bitebuilder.startpage

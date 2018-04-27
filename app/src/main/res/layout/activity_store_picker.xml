@@ -9,8 +9,7 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick=""/>
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

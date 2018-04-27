@@ -45,7 +45,7 @@
             android:label="@string/title_store" />
         <activity
             android:name="com.bitebuilder.SettingsActivity"
-            android:label="@string/title_settings" />
+            android:label="Sign out" />
         <activity
             android:name="com.bitebuilder.startpage"
             android:theme="@style/NoActionBar" >
