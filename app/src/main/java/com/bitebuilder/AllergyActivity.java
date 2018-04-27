@@ -81,9 +81,16 @@ public class AllergyActivity extends AppCompatActivity{
     }
 
     public void next2(View view) {
-        if (dairy==true){
-            allergies[0]="dairy";
-        }
+        allergies[0]="null";
+        allergies[1]="null";
+        allergies[2]="null";
+        allergies[3]="null";
+        allergies[4]="null";
+        allergies[5]="null";
+        allergies[6]="null";
+        allergies[0]="null";
+
+
         if (egg==true){
             allergies[1]="eggs";
         }
@@ -102,6 +109,8 @@ public class AllergyActivity extends AppCompatActivity{
         if (fish==true){
             allergies[6]="fish";
         }
+
+
 
         Intent intent = new Intent(this, AboutYouActivity.class);
         intent.putExtra("allergies",allergies);

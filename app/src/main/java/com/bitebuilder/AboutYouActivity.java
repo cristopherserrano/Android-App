@@ -47,7 +47,7 @@ public class AboutYouActivity extends AppCompatActivity{
 
     }
 
-    public void Start(View view) {
+    public void start(View view) {
 
         if((conpass.getText().toString()).equals(password1.getText().toString())){
 
@@ -58,37 +58,18 @@ public class AboutYouActivity extends AppCompatActivity{
             editor.putString("user", userName.getText().toString());
             editor.commit();
 
-            //        Firebase
-//            Map<String, String> map = new HashMap<>();
-//                map.put("diet",diet);
-//                map.put("password",password1.getText().toString());
-//                map.put("username",userName.getText().toString());
-//                for(int x=0; x<allergies.length; x++){
-//                    map.put("allergy",allergies[x]);
-//                }
-//
-//            databaseReference.setValue(map);
-//            Log.d("cris",allergies[0]);
 
-
-            databaseReference.push().setValue(userName.getText().toString());
+//            databaseReference.push().setValue(userName.getText().toString());
             databaseReference.child(userName.getText().toString()).child("diet").setValue(diet);
             databaseReference.child(userName.getText().toString()).child("password").setValue(password1.getText().toString());
             databaseReference.child(userName.getText().toString()).child("username").setValue(userName.getText().toString());
-//            databaseReference.child("users").child(userName.getText().toString()).child("allergy").setValue();
             databaseReference.child(userName.getText().toString()).child("allergy").setValue("");
             for(int x=0; x<allergies.length;x++){
                 if(!allergies[x].equals("null")){
                     databaseReference.child(userName.getText().toString()).child("allergy").child(String.valueOf(x)).setValue(allergies[x]);
-
                 }
             }
 
-//            make a new reference with this one it
-//          userName.getText().toString()/allergy
-
-
-            //         Enter App
             Intent intent = new Intent(this, MealPlanActivity.class);
             startActivity(intent);
         }

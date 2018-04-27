@@ -32,8 +32,8 @@ public class startpage extends AppCompatActivity {
 
     public static final String PREFS_NAME = "CoreSkillsPrefsFile";
 
-    EditText userName;
-    EditText password1;
+    EditText userNameEditText;
+    EditText passwordEditText;
     String username;
     String password;
 
@@ -45,15 +45,13 @@ public class startpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startpage);
 
-        userName  = findViewById(R.id.userName);
-        password1 = findViewById(R.id.editText3);
-        username= findViewById(R.id.userName).toString();
-        password= findViewById(R.id.userName).toString();
+        userNameEditText = findViewById(R.id.userName);
+        passwordEditText = findViewById(R.id.editText3);
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
         String editTextValue = settings.getString("password", "none");
         String editTextValue2 = settings.getString("user", "none");
-        userName.setText(editTextValue2);
-        password1.setText(editTextValue);
+        userNameEditText.setText(editTextValue2);
+        passwordEditText.setText(editTextValue);
 
     }
 
@@ -88,52 +86,42 @@ public class startpage extends AppCompatActivity {
 ////            }
 ////        }
 //        }
-    public void verify(String fuser, String fpass){
-        if(fuser.equals(username)) {
-            if (fpass.equals(password)) {
-                Intent intent = new Intent(startpage.this, MealPlanActivity.class);
-                startActivity(intent);
-            } else {
-                Context context = getApplicationContext();
-                CharSequence text = "There is no account that matches those credentials";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+    public void verify(ArrayList<String> fusernames, ArrayList<String> fpasswords){
+        username = userNameEditText.getText().toString();
+        password = passwordEditText.getText().toString();
+        for(int i = 0; i < fusernames.size(); i++) {
+            if(fusernames.get(i).equals(username)) {
+                if(fpasswords.get(i).equals(password)) {
+                    Log.i("checking", "checking: " + password);
+                    Intent intent = new Intent(startpage.this, MealPlanActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Context context = getApplicationContext();
+                    CharSequence text = "There is no account that matches those credentials";
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }
             }
-        }
-        else {
-            Context context = getApplicationContext();
-            CharSequence text = "There is no account that matches those credentials";
-            int duration = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
         }
     }
 
     public void SignIn(View view) {
-
-
-        final DatabaseReference database= FirebaseDatabase.getInstance().getReference().child("users");
-
+        DatabaseReference database= FirebaseDatabase.getInstance().getReference().child("users");
         database.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+                ArrayList<String> users = new ArrayList<>();
+                ArrayList<String> passwords = new ArrayList<>();
+                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                    String password = userSnapshot.child("password").getValue().toString();
+                    String username = userSnapshot.child("username").getValue().toString();
+                    passwords.add(password);
+                    users.add(username);
+                }
 
-                Object users=dataSnapshot.child(username).child("username").getValue();
-                Object pass=dataSnapshot.child(username).child("password").getValue();
-
-
-
-//                ArrayList<String> users= new ArrayList<>();
-//                ArrayList<String> pass= new ArrayList<>();
-
-//                for(DataSnapshot user : dataSnapshot.getChildren()){
-//                    String password=user.child("password").getValue().toString();
-//                    pass.add(password);
-//                    String username=user.child("username").getValue().toString();
-//                    users.add(username);
-//                }
-                verify(users.toString(),pass.toString());
+                verify(users, passwords);
             }
 
             @Override
