@@ -36,9 +36,6 @@ public class startpage extends AppCompatActivity {
     EditText passwordEditText;
     String username;
     String password;
-    String editTextValue;
-    String editTextValue2;
-    SharedPreferences settings;
 
 
 
@@ -50,13 +47,11 @@ public class startpage extends AppCompatActivity {
 
         userNameEditText = findViewById(R.id.userName);
         passwordEditText = findViewById(R.id.editText3);
-        settings = getSharedPreferences(PREFS_NAME, 0);
-        editTextValue = settings.getString("password", "AB345");
-        editTextValue2 = settings.getString("user", "Username");
-        if(!editTextValue.equals("AB345")) {
-            userNameEditText.setText(editTextValue2);
-            passwordEditText.setText(editTextValue);
-        }
+        SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+        String editTextValue = settings.getString("password", "none");
+        String editTextValue2 = settings.getString("user", "none");
+        userNameEditText.setText(editTextValue2);
+        passwordEditText.setText(editTextValue);
 
     }
 
@@ -70,13 +65,34 @@ public class startpage extends AppCompatActivity {
 
 
 
-
+    //    public void verify(ArrayList<String> user, ArrayList<String> pass){
+////        String user1=userName.getText().toString();
+////        String pass1=password1.getText().toString();
+////        for (String x: user){
+////            if (x.equals(user1)) {
+////                for (String y: pass){
+////                    if (y.equals(pass1)) {
+////                        Intent intent = new Intent(startpage.this, MealPlanActivity.class);
+////                        startActivity(intent);
+////                    }
+////                    else{
+////                        Context context = getApplicationContext();
+////                        CharSequence text = "There is no account that matches those credentials";
+////                        int duration = Toast.LENGTH_SHORT;
+////                        Toast toast = Toast.makeText(context, text, duration);
+////                        toast.show();
+////                    }
+////                }
+////            }
+////        }
+//        }
     public void verify(ArrayList<String> fusernames, ArrayList<String> fpasswords){
         username = userNameEditText.getText().toString();
         password = passwordEditText.getText().toString();
         for(int i = 0; i < fusernames.size(); i++) {
             if(fusernames.get(i).equals(username)) {
                 if(fpasswords.get(i).equals(password)) {
+                    Log.i("checking", "checking: " + password);
                     Intent intent = new Intent(startpage.this, MealPlanActivity.class);
                     startActivity(intent);
                 }
@@ -98,18 +114,14 @@ public class startpage extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ArrayList<String> users = new ArrayList<>();
                 ArrayList<String> passwords = new ArrayList<>();
-//                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
-//                    String username = userSnapshot.child("username").getValue().toString();
-//                    String password = userSnapshot.child("password").getValue().toString();
-//                    passwords.add(password);
-//                    users.add(username);
-//                }
-                if(!editTextValue.equals("")){
-                    Intent intent = new Intent(startpage.this, MealPlanActivity.class);
-                    startActivity(intent);
+                for(DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                    String password = userSnapshot.child("password").getValue().toString();
+                    String username = userSnapshot.child("username").getValue().toString();
+                    passwords.add(password);
+                    users.add(username);
                 }
 
-//                verify(users, passwords);
+                verify(users, passwords);
             }
 
             @Override
@@ -122,6 +134,10 @@ public class startpage extends AppCompatActivity {
 
     }
 
+    public void loadFromSharedPreferences(View view) {
 
+        // Add your code here to load
+
+    }
 
 }
