@@ -6,26 +6,26 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.1.2"
-    timestamp="1524826216595"
+    timestamp="1524827403931"
     token="-6589170344565558219"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1753" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="58" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="53" />
     <task
         name="verifier"
-        duration="0" />
+        duration="8" />
 
     <artifact
-        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-        type="SPLIT" />
+        location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
@@ -72,12 +72,21 @@
             type="SPLIT_MAIN" />
     </build>
     <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1524827098716"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
         build-mode="HOT_WARM"
-        timestamp="1524826216595"
+        timestamp="1524827403931"
         verifier="COMPATIBLE" >
         <artifact
-            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
+            location="C:\UVA\cs4720\final-project-final-serranoclark-1\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

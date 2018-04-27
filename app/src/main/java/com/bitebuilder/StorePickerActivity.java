@@ -21,21 +21,25 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
+import java.util.List;
+
 public class StorePickerActivity extends BaseActivity implements LocationListener {
 
-    LocationManager locationManager;
-    Location location;
-    Double lat = 0.0, lon = 0.0;
+    private LocationManager locationManager;
+    private Location location;
+    private Double lat, lon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getLocation();
+        lat = 0.0;
+        lon = 0.0;
+        location = getLocation();
         loadNearByStores();
 
     }
 
-    private void getLocation() {
+    private Location getLocation() {
         if ( Build.VERSION.SDK_INT >= 23 &&
                 ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission( this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -43,11 +47,27 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
         }
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, this);
-        location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+////        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 2000, 1, this);
+//        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+//        lat = location.getLatitude();
+//        lon = location.getLongitude();
+
+        List<String> providers = locationManager.getProviders(true);
+        Location bestLocation = null;
+        for (String provider : providers) {
+            Location loc = locationManager.getLastKnownLocation(provider);
+            if (loc == null) {
+                continue;
+            }
+            if (bestLocation == null || loc.getAccuracy() < bestLocation.getAccuracy()) {
+                bestLocation = loc;
+            }
+        }
+        return bestLocation;
     }
 
     private void loadNearByStores() {
+        Log.i("location", "location : " + lat + ", " + lon);
         Intent i = getIntent();
         String type = "grocery";
 
