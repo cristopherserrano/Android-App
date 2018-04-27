@@ -9,51 +9,70 @@
     android:orientation="vertical"
     android:background="#FFF">
 
-
-    <ImageView
-        android:id="@+id/mealImage"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="center"
-        android:paddingHorizontal="10dp"
-        android:scaleType="fitCenter" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/mealName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mealImage"
-        android:layout_centerHorizontal="true"
-        android:background="#fff"
-        android:padding="10dp"
-        android:textColor="#000"
-        android:textSize="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/ingredientsTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mealName"
-        android:layout_centerHorizontal="true"
-        android:background="#fff"
-        android:padding="10dp"
-        android:textColor="#000"
-        android:textSize="10dp"
-        android:text="Ingredients: "/>
+            <ImageView
+                android:id="@+id/mealImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:paddingHorizontal="10dp"
+                android:scaleType="fitCenter" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ingredientsLayout">
+            <TextView
+                android:id="@+id/mealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mealImage"
+                android:layout_centerHorizontal="true"
+                android:background="#fff"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="20dp" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#000"/>
 
+            <TextView
+                android:id="@+id/ingredientsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mealName"
+                android:layout_centerHorizontal="true"
+                android:background="#fff"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingBottom="0dp"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Ingredients: "/>
 
+            <TextView
+                android:id="@+id/ingredientsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ingredientsTitle"
+                android:layout_centerHorizontal="true"
+                android:background="#fff"
+                android:paddingStart="20dp"
+                android:paddingTop="0dp"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="16dp" />
 
+        </RelativeLayout>
 
-
-
-    </RelativeLayout>
+    </ScrollView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

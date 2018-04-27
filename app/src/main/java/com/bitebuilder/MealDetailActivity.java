@@ -1,6 +1,10 @@
 package com.bitebuilder;
 
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -28,21 +32,16 @@ public class MealDetailActivity extends BaseActivity {
         StorageReference imageReference = gsReference.child(imageUrl);
         GlideApp.with(this).load(imageReference).into(imageView);
 
-
-
-        for(String ingredient : ingredients) {
-            TextView ingredientView = new TextView(this);
-            ingredientView.setTextSize(20);
-            ingredientView.setText(" - " + ingredient);
-
-            RelativeLayout layout = findViewById(R.id.detail_container);
-
-            RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-            params.addRule(RelativeLayout.BELOW, R.id.ingredientsTitle);
-            ingredientView.setLayoutParams(params);
-
-            layout.addView(ingredientView);
+        int i = 0;
+        String ingredient = ingredients[0];
+        String ingredientsList = "";
+        while(!ingredient.equals("null")) {
+            ingredientsList += " &#160;&#160;-&#160;&#160; " + ingredient + "<br/>";
+            i++;
+            ingredient = ingredients[i];
         }
+        TextView ingredientsTextView = (TextView) findViewById(R.id.ingredientsText);
+        ingredientsTextView.setText(Html.fromHtml(ingredientsList));
     }
 
     @Override

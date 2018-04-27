@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\6c908128ee0c081fa9b1aaa31c643a23\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\David\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\adda3dcbe51de930add3385e951a810d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\0e54f9764d242dc65615a379ca6e5412\AndroidManifest.xml:2:1-11:12
@@ -39,25 +39,33 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\David\.gradle\cach
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\06683a4d2b7cbd3dda776d7983080369\AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\83307ec78e40ed05f15315a381c13f29\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\88bde9d56e9b4298c51f9d678176eb17\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:3:5-30
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-60:12
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:4:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:5:5-78
+	android:name
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:5:22-76
 application
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:5:5-58:19
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:7:5-60:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\0e54f9764d242dc65615a379ca6e5412\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\0e54f9764d242dc65615a379ca6e5412\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-core:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\firebase-core-15.0.0.aar\0f2020281d7ed275a699ef90f985fb7f\AndroidManifest.xml:7:5-20
@@ -85,93 +93,93 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\David\.gradle\
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\06683a4d2b7cbd3dda776d7983080369\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-measurement-base:15.0.0] C:\Users\David\.gradle\caches\transforms-1\files-1.1\play-services-measurement-base-15.0.0.aar\06683a4d2b7cbd3dda776d7983080369\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.bitebuilder.MealPlanActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:12:9-14:54
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:14:9-16:54
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:14:13-52
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:16:13-52
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:13:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:15:13-45
 activity#com.bitebuilder.AddMealActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:15:9-17:50
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:17:9-19:50
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:17:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:19:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:16:13-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:18:13-44
 activity#com.bitebuilder.GroceryListActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:18:9-21:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:20:9-23:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:20:13-55
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:22:13-55
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:19:13-48
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:21:13-48
 activity#com.bitebuilder.FavoritesActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:22:9-25:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:24:9-27:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:24:13-52
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:26:13-52
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:23:13-46
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:25:13-46
 activity#com.bitebuilder.MealCheckerActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:26:9-29:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:28:9-31:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:28:13-50
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:30:13-50
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:27:13-48
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:29:13-48
 activity#com.bitebuilder.SettingsActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:30:9-33:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:32:9-35:15
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:32:13-51
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:34:13-51
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:31:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:33:13-45
 activity#com.bitebuilder.startpage
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:35:9-42:20
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:9-44:20
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:36:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:38:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:35:19-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:19-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:37:13-41:29
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:39:13-43:29
 action#android.intent.action.MAIN
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:17-77
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:42:27-74
 activity#com.bitebuilder.MealDetailActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:43:9-44:54
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:45:9-46:54
 	android:label
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:44:13-52
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:46:13-52
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:43:19-53
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:45:19-53
 activity#com.bitebuilder.AboutYouActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:46:9-49:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:48:9-51:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:48:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:50:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:47:13-45
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:49:13-45
 activity#com.bitebuilder.AllergyActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:50:9-53:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:52:9-55:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:52:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:54:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:51:13-44
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:53:13-44
 activity#com.bitebuilder.DietActivity
-ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:54:9-57:15
+ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:56:9-59:15
 	android:theme
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:56:13-47
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:58:13-47
 	android:name
-		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:55:13-41
+		ADDED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml:57:13-41
 uses-sdk
 INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\UVA\cs4720\final-project-final-serranoclark-1\app\src\main\AndroidManifest.xml

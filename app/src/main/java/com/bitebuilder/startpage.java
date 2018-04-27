@@ -62,12 +62,13 @@ public class startpage extends AppCompatActivity {
     public void verify(ArrayList<String> user, ArrayList<String> pass){
         String user1=userName.getText().toString();
         String pass1=password1.getText().toString();
+        Intent intent = new Intent(startpage.this, MealPlanActivity.class);
+        startActivity(intent);
         for (String x: user){
             if (x.equals(user1)) {
                 for (String y: pass){
                     if (y.equals(pass1)) {
-                        Intent intent = new Intent(startpage.this, MealPlanActivity.class);
-                        startActivity(intent);
+
                     }
                 }
             }
