@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/cristopherserrano/Box Sync/Android Studio Projects/final-project-final-serranoclark-1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
+            "outputFile": "C:\\UVA\\cs4720\\final-project-final-serranoclark-1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-is\\values-is.xml",
             "map": [
                 {
-                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/dc702390b5ff7c0a20c5044caa17605c/res/values-is/values.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.0.aar\\10552cf4050a869da939e138c7327711\\res\\values-is\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a5c94748576f4c66bad77ff866c20081/res/values-is/values-is.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\bb7aec419ccc8e0610f0a1e7b8892f95\\res\\values-is\\values-is.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/cristopherserrano/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9d9a3dd6fb048a6dc8fa1358312087c4/res/values-is/values-is.xml",
+                    "source": "C:\\Users\\David\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\d7ae9e666b2b44c1283c572245a20e3c\\res\\values-is\\values-is.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

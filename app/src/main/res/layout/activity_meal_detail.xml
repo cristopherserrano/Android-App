@@ -74,31 +74,6 @@
 
     </ScrollView>
 
-    <TextView
-        android:id="@+id/ingredientsTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mealName"
-        android:layout_centerHorizontal="true"
-        android:background="#fff"
-        android:padding="10dp"
-        android:textColor="#000"
-        android:textSize="10dp"
-        android:text="Ingredients: "/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/ingredientsLayout">
-
-
-
-
-
-
-
-    </RelativeLayout>
-
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"

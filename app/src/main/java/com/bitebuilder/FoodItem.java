@@ -1,15 +1,16 @@
 package com.bitebuilder;
 
+import android.os.Parcel;
+import android.os.Parcelable;
 import com.google.firebase.storage.StorageReference;
 
-public class FoodItem {
+public class FoodItem implements Parcelable {
     private int image = 0;
+    private boolean selected = false;
     private String name = "", imageUrl = "";
     private String[] ingredients;
     private StorageReference imageReference;
 
-<<<<<<< Updated upstream
-=======
     public FoodItem(Parcel in) {
         super();
         String[] ingredients = new String[20];
@@ -19,7 +20,6 @@ public class FoodItem {
         this.imageUrl = in.readString();
     }
 
->>>>>>> Stashed changes
     public FoodItem(int image, String name) {
         super();
         this.image = image;
@@ -33,11 +33,6 @@ public class FoodItem {
         this.ingredients = ingredients;
     }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
     public FoodItem(String name, String imageUrl, String ingredients) {
         super();
         this.name = name;
@@ -47,10 +42,6 @@ public class FoodItem {
             this.ingredients[i] = ingredients.split(",")[i];
         }
     }
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
     public int getImage() {
         return image;
@@ -59,6 +50,10 @@ public class FoodItem {
     public void setImage(int image) {
         this.image = image;
     }
+
+    public boolean getSelected() { return selected; }
+
+    public void toggleSelected() { this.selected = !this.selected; }
 
     public String getName() {
         return name;
@@ -79,4 +74,27 @@ public class FoodItem {
     public StorageReference getImageReference() { return imageReference; }
 
     public void setImageReference(StorageReference imageReference) { this.imageReference = imageReference; }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeStringArray(ingredients);
+        dest.writeString(name);
+        dest.writeString(imageUrl);
+    }
+
+    public static final Creator<FoodItem> CREATOR = new Creator<FoodItem>() {
+        @Override
+        public FoodItem createFromParcel(Parcel in) {
+            return new FoodItem(in);
+        }
+        @Override
+        public FoodItem[] newArray(int size) {
+            return new FoodItem[size];
+        }
+    };
 }

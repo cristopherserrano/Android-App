@@ -2,7 +2,10 @@ package com.bitebuilder;
 
 
 import android.content.Intent;
+import android.location.LocationManager;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.widget.TextView;
 
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,79 +21,32 @@ public class GroceryListActivity extends BaseActivity {
     ArrayList<String> bucketList;
     RecyclerView rvBucketList;
 
+    LocationManager locationManager;
+    private static final int TAKE_PHOTO_PERMISSION = 1;
+
+    TextView latTextView;
+    TextView lonTextView;
+
+    Double currentLat;
+    Double currentLon;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+    }
 
     @Override
     public int getContentViewId() {
-
         return R.layout.activity_grocery_list;
     }
 
     @Override
     public int getNavigationMenuItemId() {
-
         return R.id.navigation_grocery_list;
     }
 
-//    public void generate(){
-//        DatabaseReference database= FirebaseDatabase.getInstance().getReference().child("users");
-//
-//        database.addListenerForSingleValueEvent(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                ArrayList<String> users= new ArrayList<>();
-//                ArrayList<String> pass= new ArrayList<>();
-//
-//                for(DataSnapshot user : dataSnapshot.getChildren()){
-//                    String password=user.child("password").getValue().toString();
-//                    pass.add(password);
-//                    String username=user.child("username").getValue().toString();
-//                    users.add(username);
-//                }
-//                verify(users,pass);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//    }
-
-//    public void verify(ArrayList<String> user, ArrayList<String> pass){
-//
-//        for (String x: user){
-//            if (x.equals(user1)) {
-//                for (String y: pass){
-//                    if (y.equals(pass1)) {
-//                        Intent intent = new Intent(startpage.this, MealPlanActivity.class);
-//                        startActivity(intent);
-//                    }
-//                }
-//            }
-//        }
-//    }
-
-
-
-
-//    LocationManager locationManager;
-//    private static final int TAKE_PHOTO_PERMISSION = 1;
-//
-//    TextView latTextView;
-//    TextView lonTextView;
-//
-//    Double currentLat;
-//    Double currentLon;
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_gps);
-//
-//        latTextView = (TextView)findViewById(R.id.latTextView);
-//        lonTextView = (TextView)findViewById(R.id.lonTextView);
-//
-//    }
 //
 //    public void startGPS(View view) {
 //

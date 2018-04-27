@@ -1,13 +1,27 @@
 package com.bitebuilder;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -17,12 +31,15 @@ public class MealPlanActivity extends BaseActivity {
 
     private GridView gridView;
     private GridViewAdapter gridViewAdapter;
-    private ArrayList<FoodItem> meals = new ArrayList<>();
+    private ArrayList<FoodItem> meals;
+    private DatabaseHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        meals = new ArrayList<>();
+        mDbHelper = new DatabaseHelper(this);
         downloadFoodItems();
 
         // Fill image references from firebase storage
@@ -50,14 +67,10 @@ public class MealPlanActivity extends BaseActivity {
             }
         });
 
-        FloatingActionButton addMealsButtton = (FloatingActionButton) findViewById(R.id.addMeals);
-        addMealsButtton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent addIntent = new Intent(MealPlanActivity.this, AddMealActivity.class);
-                startActivity(addIntent);
-            }
-        });
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Meal Plan");
+        toolbar.setTitleTextColor(Color.WHITE);
+        setSupportActionBar(toolbar);
     }
 
     @Override
@@ -71,7 +84,6 @@ public class MealPlanActivity extends BaseActivity {
     }
 
     public void downloadFoodItems() {
-        DatabaseHelper mDbHelper = new DatabaseHelper(this);
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
         // Which columns from the database you will actually use after this query
@@ -100,8 +112,6 @@ public class MealPlanActivity extends BaseActivity {
             meals.add(meal);
         }
     }
-<<<<<<< Updated upstream
-=======
 
     public void addMeals(View v) {
         DatabaseReference mealsReference = FirebaseDatabase.getInstance().getReference().child("meals");
@@ -133,5 +143,24 @@ public class MealPlanActivity extends BaseActivity {
             }
         });
     }
->>>>>>> Stashed changes
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.meal_plan_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_reset) {
+            SQLiteDatabase db = mDbHelper.getWritableDatabase();
+            db.execSQL("delete from "+ "meal");
+            gridView.setAdapter(null);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
