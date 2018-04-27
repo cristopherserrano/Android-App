@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -28,15 +30,24 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
     private LocationManager locationManager;
     private Location location;
     private Double lat, lon;
+    private TextView nearestText, storeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         lat = 0.0;
         lon = 0.0;
+        nearestText = (TextView) findViewById(R.id.nearestText);
+        storeText = (TextView) findViewById(R.id.storeText);
         location = getLocation();
         loadNearByStores();
 
+    }
+
+    public void getLocationOnClick(View view) {
+        nearestText.setText("Nearest store: ");
+        storeText.setText("Foods of all Nations");
+        getLocation();
     }
 
     private Location getLocation() {
@@ -73,7 +84,7 @@ public class StorePickerActivity extends BaseActivity implements LocationListene
 
         StringBuilder googlePlacesUrl =
                 new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
-        googlePlacesUrl.append("location=").append(lat).append(",").append(lon);
+        googlePlacesUrl.append("location=").append(38.0301064).append(",").append(-78.5055744);
         googlePlacesUrl.append("&radius=").append(500);
         googlePlacesUrl.append("&types=").append(type);
         googlePlacesUrl.append("&sensor=true");
