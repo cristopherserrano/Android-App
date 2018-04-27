@@ -16,7 +16,7 @@
         android:contentDescription="@string/steak_meal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.501"
@@ -24,34 +24,36 @@
 
     <Button
         android:id="@+id/newUser"
-        android:layout_width="240dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginStart="140dp"
         android:gravity="center"
         android:onClick="NewUser"
-        android:text="New User"
+        android:text="New User "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/signIn"
-        android:layout_width="237dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:onClick="SignIn"
         android:text="Sign In "
-        app:layout_constraintBottom_toTopOf="@+id/newUser"
+        app:layout_constraintBottom_toBottomOf="@+id/newUser"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/Title"
@@ -81,16 +83,20 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:background="#F0F0F0"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
 
+        android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/editText3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.981" />
 
     <EditText
         android:id="@+id/editText3"
@@ -102,8 +108,7 @@
         android:background="#F0F0F0"
         android:ems="10"
         android:gravity="center"
-        android:inputType="textPersonName"
-
+        android:inputType="textPassword"
         android:textAlignment="center"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/signIn"

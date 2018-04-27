@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -12,6 +13,9 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static com.bitebuilder.startpage.PREFS_NAME;
 
@@ -27,7 +31,6 @@ public class AboutYouActivity extends AppCompatActivity{
     EditText userName;
     EditText password1;
     EditText conpass;
-
     String diet;
     String[] allergies= new String[7];
 
@@ -40,7 +43,8 @@ public class AboutYouActivity extends AppCompatActivity{
         conpass   = findViewById(R.id.conpass);
         diet=getIntent().getStringExtra("diet");
         allergies=getIntent().getStringArrayExtra("allergies");
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference("users");
+
     }
 
     public void Start(View view) {
@@ -55,15 +59,34 @@ public class AboutYouActivity extends AppCompatActivity{
             editor.commit();
 
             //        Firebase
-            databaseReference.child("users").push();
-            databaseReference.child("users").setValue(userName.getText().toString());
-            databaseReference.child("users").child(userName.getText().toString()).child("diet").setValue(diet);
-            databaseReference.child("users").child(userName.getText().toString()).child("diet").push();
-            databaseReference.child("users").child(userName.getText().toString()).child("password").setValue(password1.getText().toString());
-            databaseReference.child("users").child(userName.getText().toString()).child("username").setValue(userName.getText().toString());
-            for(int x=0; x<allergies.length; x++){
-                databaseReference.child("users").child(userName.getText().toString()).child("allergy").setValue(allergies[x]);
+//            Map<String, String> map = new HashMap<>();
+//                map.put("diet",diet);
+//                map.put("password",password1.getText().toString());
+//                map.put("username",userName.getText().toString());
+//                for(int x=0; x<allergies.length; x++){
+//                    map.put("allergy",allergies[x]);
+//                }
+//
+//            databaseReference.setValue(map);
+//            Log.d("cris",allergies[0]);
+
+
+            databaseReference.push().setValue(userName.getText().toString());
+            databaseReference.child(userName.getText().toString()).child("diet").setValue(diet);
+            databaseReference.child(userName.getText().toString()).child("password").setValue(password1.getText().toString());
+            databaseReference.child(userName.getText().toString()).child("username").setValue(userName.getText().toString());
+//            databaseReference.child("users").child(userName.getText().toString()).child("allergy").setValue();
+            databaseReference.child(userName.getText().toString()).child("allergy").setValue("");
+            for(int x=0; x<allergies.length;x++){
+                if(!allergies[x].equals("null")){
+                    databaseReference.child(userName.getText().toString()).child("allergy").child(String.valueOf(x)).setValue(allergies[x]);
+
+                }
             }
+
+//            make a new reference with this one it
+//          userName.getText().toString()/allergy
+
 
             //         Enter App
             Intent intent = new Intent(this, MealPlanActivity.class);
